@@ -1,0 +1,91 @@
+Yuye Zhou (JoJo) 
+
+yzhou@ucsd.edu | (858)847-8396 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+individual’s taste based on the movies that he/she have seen 
+
+        March 2016 - June 2016 
+Individual project in Intro/Java class, using Java under Linux operating system to create the functions of Game 2048 
+
+ 
+Education 
+University of California, San Diego                                                Majors: B.S. Computer Science Engineering 
+Expected Graduation: June 2019                                                                     B.S. Probability and Statistics 
+GPA: 3.93 
+	
+Skills 
+Languages and Tools: Java, C, C++, MATLAB, LaTeX, SPARC, Linux, Vim, Eclipse, Git 
+Current Courses: HTML, CSS, OCaml, Python 
+Other: Proficient in English and Chinese; confident in public speaking 
+	
+Project / Coursework 
+Movie Recommendation (MATLAB)          
+        July 2017 
+-  Used EM Algorithm and log-likelihood to complete a movie recommendation system in MATLAB 
+-  Given a set of movies and a file of people’s rating of the movies, the program could recommend movies that match 
+ 
+Auto-Complete (C++)                                                                                                                             April 2017 
+Individual coursework that completed the function of auto-complete by implementing a Ternary Search Tree in C++ 
+- 
+under Linux operating system 
+-  Given a dictionary of words and their frequency, a prefix and a number of words wanted, the program will print a list 
+of words that starts with the prefix and has the highest frequency.  
+ 
+Game 2048 (Java)  
+- 
+-  Used GUI to realize the user interaction and personalize the game to be played in n*n size board instead of 4*4 
+ 
+Work Experience 
+CTRI Evaluation Intern                                                                                                 January 2017 - July 2017 
+-  Managed publication database EndNote and assisted supervisor with survey data using Excel and Qualtrics  
+-  Learned about analytical writing in order to present data in concise manner  
+ 
+UCSD CSE Tutor                                                                                                    September 2016 - March 2017 
+-  Tutored 300 students in Discrete Math Winter 2017 and 100 students in Intro/Java in Fall 2016 
+Improved debugging skills by holding lab hours and communication skills by clarifying key concepts in Piazza and 
+- 
+office hours 
+ 
+Extra-Curricular Activity 
+Women in Computing Outreach Committee Member                                                September 2016 - Present 
+-  Organize and design outreach events to encourage high school students, especially girls, to learn about STEM fields 
+-  Contact different CSE student organizations to participate in outreach events 
+ 
+ 
+UCSD Center for Student Involvement Peer Educator                                         September 2016 - June 2017 
+-  Co-facilitated in Fall 2016 Public Speaking Seminar 
+Improved public speaking and communication skills while helping other participants to learn topics such as preparing 
+- 
+presentation and overcoming stage fright 
+ 
+	
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
