@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <style>
+    .col-lg-12{
+      text-align: center
+    }
+    .navbar{
+    margin-bottom: 0px;
+    }
+    .footer {
+      border-top-style: outset;
+      position: absolute;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      padding-bottom: 10px;
+      background-color: grey;
+      text-align: center;
+    }
+
+    img{
+      width: 10%;
+      height: 10%;
+    }
+    /* unvisited link */
+    a:link {
+        color: #43967F;
+    }
+
+    /* visited link */
+    a:visited {
+        color: #277E66;
+    }
+
+    /* mouse over link */
+    a:hover {
+        color: #5BC6A9;
+    }
+
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="./index.html">See U Monday</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="./index.html">Home</a></li>
+      <li><a href="./about_us.html">About Us</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="jumbotron text-center" style="background-color:black;">
+  <h1 style="color: white; font-size: 100px;"><img src="https://cdn3.iconfinder.com/data/icons/business-office-2/512/zoom_in-512.png" alt="logo">See U Monday!</h1>
+  <h3 style="color: white;">Your personal job searching tool!</ >
+</div>
+
+<div class="col-lg-12">
+    <h2>Upload Your Resume:</h2>
+    <label style="background-color:grey;width:40%;margin:auto;border:none" class="btn btn-block btn-primary">
+        Browse&hellip; <input type="file" style="display: none;">
+    </label><br><br>
+    <label class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input">
+        <span class="custom-control-indicator"></span>
+        <span class="custom-control-description">Full Time     </span>
+    </label>
+    <label class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input">
+        <span class="custom-control-indicator"></span>
+        <span class="custom-control-description">Part Time    </span>
+    </label>
+    <label class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input">
+        <span class="custom-control-indicator"></span>
+        <span class="custom-control-description">Internship/Co-op </span>
+    </label><br><br>
+    <button type="button-lg" class="btn btn-primary" style="background-color:#43967F ;border:none">Submit</button>
+</div>
+
+<footer class="footer">
+    <div class="container text-center" style="padding-top: 10px;">
+      <span>Designed by: Khuyen Cao, Quyen Hoang, Anqi Lu</span>
+      <div class="footer-copyright py-3 text-center">
+          © 2018 Copyright:
+          <a href="https://github.com/SeeYouMonday"> Github </a>
+      </div>
+    </div>
+</footer>
+
+</body>
+</html>
