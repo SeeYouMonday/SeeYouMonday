@@ -10,6 +10,8 @@ beautifulsoup4 = "*"
 numpy = "*"
 urllib3 = "*"
 flask = "*"
+"pdfminer.six" = "*"
+requests = "*"
 
 [dev-packages]
 

@@ -1,90 +1,59 @@
-Yuye Zhou (JoJo) 
-
-yzhou@ucsd.edu | (858)847-8396 
-
  
 
- 
+EXPERIENCE 
 
- 
+DANIEL SONG 
 
- 
+112 Willow St, Acton, MA. · 978-319-1368 
 
- 
+dansong01@gmail.com · http://users.wpi.edu/~dlsong/ 
 
- 
+ https://github.com/1nkling  
 
+[AUGUST 2017] – [PRESENT]  
+SOFTWARE ENGINEER, MIT LINCOLN LABORATORIES 
+Implemented/Optimized image processing algorithms (NUC, CFAR) on Jetson TX1/TX2 boards in 
+CUDA/C++ for an autonomous closed-loop CubeSat optical sensor system. 
  
+[JUNE 2017] – [AUGUST 2017]  
+APPLICATIONS ENGINEERING INTERN, SILICON LABS 
+Created sample applications in C to demonstrate the functionality of proprietary radio boards using 
+Zigbee/Thread protocols to potential customers.  Currently in use by Ring, Lutron and more. 
 
- 
+EDUCATION 
 
- 
+[AUGUST 2014 - PRESENT] 
+B.S. ELECTRICAL AND COMPUTER ENGINEERING (ECE),  
+MINOR IN COMPUTER SCIENCE (CS) 
+Worcester Polytechnic Institute (WPI), Worcester, MA. GPA 3.77, graduating on May 2018  
+CS Coursework: Introduction to Program Design, Object-Oriented Design Concepts, Systems 
+Programming Concepts, Machine Org. & Assembly, Algorithms 
+TBC Spring 2018: Database Systems I&II, Artificial Intelligence, Computer Networks 
+ECE Coursework: Digital Circuit Design, Digital System Design with FPGAs, Embedded Computing in 
+Engineering Design, Real Time Embedded Systems, Continuous/Discrete Time Analysis 
 
-individual’s taste based on the movies that he/she have seen 
+SKILLS 
 
-        March 2016 - June 2016 
-Individual project in Intro/Java class, using Java under Linux operating system to create the functions of Game 2048 
+  Programming Languages: Racket, Java, C, C++, 
 
- 
-Education 
-University of California, San Diego                                                Majors: B.S. Computer Science Engineering 
-Expected Graduation: June 2019                                                                     B.S. Probability and Statistics 
-GPA: 3.93 
-	
-Skills 
-Languages and Tools: Java, C, C++, MATLAB, LaTeX, SPARC, Linux, Vim, Eclipse, Git 
-Current Courses: HTML, CSS, OCaml, Python 
-Other: Proficient in English and Chinese; confident in public speaking 
-	
-Project / Coursework 
-Movie Recommendation (MATLAB)          
-        July 2017 
--  Used EM Algorithm and log-likelihood to complete a movie recommendation system in MATLAB 
--  Given a set of movies and a file of people’s rating of the movies, the program could recommend movies that match 
- 
-Auto-Complete (C++)                                                                                                                             April 2017 
-Individual coursework that completed the function of auto-complete by implementing a Ternary Search Tree in C++ 
-- 
-under Linux operating system 
--  Given a dictionary of words and their frequency, a prefix and a number of words wanted, the program will print a list 
-of words that starts with the prefix and has the highest frequency.  
- 
-Game 2048 (Java)  
-- 
--  Used GUI to realize the user interaction and personalize the game to be played in n*n size board instead of 4*4 
- 
-Work Experience 
-CTRI Evaluation Intern                                                                                                 January 2017 - July 2017 
--  Managed publication database EndNote and assisted supervisor with survey data using Excel and Qualtrics  
--  Learned about analytical writing in order to present data in concise manner  
- 
-UCSD CSE Tutor                                                                                                    September 2016 - March 2017 
--  Tutored 300 students in Discrete Math Winter 2017 and 100 students in Intro/Java in Fall 2016 
-Improved debugging skills by holding lab hours and communication skills by clarifying key concepts in Piazza and 
-- 
-office hours 
- 
-Extra-Curricular Activity 
-Women in Computing Outreach Committee Member                                                September 2016 - Present 
--  Organize and design outreach events to encourage high school students, especially girls, to learn about STEM fields 
--  Contact different CSE student organizations to participate in outreach events 
- 
- 
-UCSD Center for Student Involvement Peer Educator                                         September 2016 - June 2017 
--  Co-facilitated in Fall 2016 Public Speaking Seminar 
-Improved public speaking and communication skills while helping other participants to learn topics such as preparing 
-- 
-presentation and overcoming stage fright 
- 
-	
+  Computer Skills: Android Studios, Eclipse, 
 
- 
+CUDA, CSS, HTML, XML  
 
- 
+  Communication Protocols: Zigbee, Thread 
 
- 
+GitHub, Git Bash, cmd, Terminal, PuTTY, 
+Sublime Text, EMACS, MultiSim, MATLAB, 
+Verilog 
 
- 
+PROJECTS 
+
+JANE, HACK@WPI, JANUARY 2017 
+Created an interactive Facebook bot using Python that could get weather info, provide images of 
+specific objects, translate between several languages, and much more. 
+SUSTAIN, WPI IQ PROJECT, FALL 2016 
+Created an Android application that uses responses to dynamically generated questions to 
+determine an individual’s level of environmental sustainability and recommend improvements. 
 
  
 

@@ -51,5 +51,13 @@ Our tool however, will be very preliminary for its use. It has the following lim
 In the future, we could explore abstracting one person’s experience and skill sets and match with the company and postings in a natural language processing way. This will not only help SUM give a more accurate match but also largely widen the range of our target users. 
 
 
+## Instruction to run it
+* install pipenv to create virtual environment 
+> `pip install pipenv`
+* install packages in pipfile
+> `pipenv install`
+* activate virtual environment
+> `pipenv shell`
 
-
+* To serve the web locally
+> `python app.py`
