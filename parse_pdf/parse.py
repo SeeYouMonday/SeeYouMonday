@@ -8,6 +8,3 @@ def parse_resume(resume_path):
   indexed = return_index(output_path)
   # print(indexed)
   return indexed
-
-if __name__ == "__main__":
-  parse_resume('parse/resumes/fResume.pdf')

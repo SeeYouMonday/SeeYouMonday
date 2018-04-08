@@ -6,8 +6,10 @@ name = "pypi"
 
 
 [packages]
-
-
+beautifulsoup4 = "*"
+numpy = "*"
+urllib3 = "*"
+flask = "*"
 
 [dev-packages]
 
