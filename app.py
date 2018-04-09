@@ -46,10 +46,7 @@ def upload():
             file.save(path)
 
             user_keywords = parse_resume(path)
-            # rs = rec_system(size, funding, user_keywords)
-            # rs.loadCompaniesData()
-            # companyRankings = rs.rankCompaniesForUser()
-            # print("company rankings", companyRankings)
+            
             app.logger.info(user_keywords)
             return render_template('about_us.html')
     else:
