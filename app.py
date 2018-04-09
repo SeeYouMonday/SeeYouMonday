@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, flash, redirect, url_for, session
 import os, sys
 from os.path import abspath, dirname
+from werkzeug.utils import secure_filename
 from parse_pdf.parse import parse_resume
 UPLOAD_FOLDER = 'static/files/'
 ALLOWED_EXTENSIONS = set(['pdf'])
@@ -24,6 +25,7 @@ def allowed_file(filename):
 @app.route('/upload/', methods=['POST', 'GET'])
 def upload():
     app.logger.info(request.method)
+    app.logger.info(request.files)
     if request.method == 'POST':
 
         if 'file' not in request.files:
@@ -38,7 +40,7 @@ def upload():
             return redirect(request.url)
         if file and allowed_file(file.filename):
             basedir = abspath(dirname(__file__))
-            filepath = file.filename
+            filepath = secure_filename(file.filename)
             app.logger.info('got filename and stuff')
             path = os.path.join(basedir, app.config['UPLOAD_FOLDER'], filepath)
             file.save(path)
@@ -49,9 +51,9 @@ def upload():
             # companyRankings = rs.rankCompaniesForUser()
             # print("company rankings", companyRankings)
             app.logger.info(user_keywords)
-            return user_keywords 
+            return render_template('about_us.html')
     else:
-        return render_template('about_us.html')
+        return render_template('index.html')
 
 
 if __name__ == '__main__':
