@@ -45,7 +45,45 @@
         color: #5BC6A9;
     }
 
+    input[type=file]{
+      display: inherit;
+    }
+    button, input, select, textarea{
+      font-size: 20px;
+      line-height: inherit;
+    }
   </style>
+  <script>
+  function bs_input_file() {
+	$(".input-file").before(
+		function() {
+			if ( ! $(this).prev().hasClass('input-ghost') ) {
+				var element = $("<input type='file' class='input-ghost' style='visibility:hidden; height:0'>");
+				element.attr("name",$(this).attr("name"));
+				element.change(function(){
+					element.next(element).find('input').val((element.val()).split('\\').pop());
+				});
+				$(this).find("button.btn-choose").click(function(){
+					element.click();
+				});
+				$(this).find("button.btn-reset").click(function(){
+					element.val(null);
+					$(this).parents(".input-file").find('input').val('');
+				});
+				$(this).find('input').css("cursor","pointer");
+				$(this).find('input').mousedown(function() {
+					$(this).parents('.input-file').prev().click();
+					return false;
+				});
+				return element;
+			}
+		}
+	);
+}
+$(function() {
+	bs_input_file();
+});
+  </script>
 </head>
 <body>
 
@@ -69,12 +107,26 @@
 <div class="col-lg-12">
     <h2>Upload Your Resume:</h2>
 
-    <form action="{{ url_for('upload') }}" method=post class=upload enctype="multipart/form-data">
+    <!-- <form action="{{ url_for('upload') }}" method=post class=upload enctype="multipart/form-data">
       <dl>
-        <label style="background-color:grey;width:40%;margin:auto;border:none" class="btn btn-block btn-primary">
-          Browse&hellip; <input type="file" class="form-control-file" name="file"
+        <label style="background-color: none;width:40%;margin:auto;border:none" class="btn">
+          <input type="file" style="text-align: center;" class="form-control-file" name="file"
           type="file" accept=".pdf" aria-describedby="fileHelp">
-      </label><br><br>
+      </label><br><br> -->
+      <form method="POST" action="#" enctype="multipart/form-data">
+	<!-- COMPONENT START -->
+	<div class="form-group">
+		<div class="input-group input-file" name="Fichier1">
+    		<input type="text" class="form-control" placeholder='Choose a file...' />
+            <span class="input-group-btn">
+        		<button class="btn btn-default btn-choose" type="button">Choose</button>
+    		</span>
+
+
+		</div>
+	</div>
+</form>
+
       <label class="custom-control custom-checkbox">
           <input type="checkbox" class="custom-control-input">
           <span class="custom-control-indicator"></span>
