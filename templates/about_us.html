@@ -40,6 +40,10 @@
         color: #5BC6A9;
     }
 
+    h3,p {
+        text-align: center;
+    }
+
   </style>
 </head>
 <body>
@@ -47,11 +51,11 @@
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="./index.html">See U Monday</a>
+      <a class="navbar-brand" href="{{ url_for('home') }}">See U Monday</a>
     </div>
     <ul class="nav navbar-nav">
-      <li><a href="./index.html">Home</a></li>
-      <li class="active"><a href="./about_us.html">About Us</a></li>
+      <li><a href="{{ url_for('home') }}">Home</a></li>
+      <li class="active"><a href="{{ url_for('about_us') }}">About Us</a></li>
     </ul>
   </div>
 </nav>
@@ -62,6 +66,24 @@
 </div>
 
 <div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>What is See U Monday?</h3>
+      <p>See U Monday (SUM) is a personalized job searching tool where the results are tailored to individual users based on their resume. Using SUM, the user can upload a resume in pdf format. The data available from that input resume will be parsed through the text to identify user’s skill set, and match the skill set with our documents that we have already built by crawling current top job searching tools such as Glassdoor and Indeed.</p>
+        <p><b>For more information, please click: <a href="https://github.com/SeeYouMonday/SeeYouMonday/blob/master/README.md">Read Me</a></b></p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Data Acquisition</h3>
+      <p>We crawl the top 3 job sites: Indeed, Monster and Glassdoor. We create a list of potential job titles and iterative through the list by changing query parameters on the urls to crawl. Each job posting is a document and we store the job title, company name, location, and job description.</p>
+        <p><b>For more information, please click: <a href="https://github.com/SeeYouMonday/SeeYouMonday/tree/master/crawl">Data Files</a></b></p>
+
+    </div>
+    <div class="col-sm-4">
+      <h3>Evaluation</h3>
+      <p>We conducted a user study to evaluate our final product.</p>
+        <p><b>To better help us improve, please fill out this <a href="https://goo.gl/forms/tO5fqWhJezJv8N0t2">Survey</a></b></p>
+    </div>
+  </div>
 </div>
 
 <footer class="footer">
@@ -69,7 +91,7 @@
       <span>Designed by: Khuyen Cao, Quyen Hoang, Anqi Lu</span>
       <div class="footer-copyright py-3 text-center">
           © 2018 Copyright:
-          <a href="https://github.com/SeeYouMonday"> Github </a>
+          <a href="https://github.com/SeeYouMonday"><b> Github </b></a>
       </div>
     </div>
 </footer>

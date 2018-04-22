@@ -18,6 +18,10 @@ def home():
         return redirect(url_for('upload'))
     return render_template('index.html')
 
+@app.route('/about_us/', methods =['POST', 'GET'])
+def about_us():
+    return render_template('about_us.html')
+
 def allowed_file(filename):
     return '.' in filename and \
            filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS

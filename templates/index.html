@@ -52,11 +52,11 @@
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="./index.html">See U Monday</a>
+      <a class="navbar-brand" href="{{ url_for('home') }}">See U Monday</a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="./index.html">Home</a></li>
-      <li><a href="./about_us.html">About Us</a></li>
+      <li class="active"><a href="{{ url_for('home') }}">Home</a></li>
+      <li><a href="{{ url_for('about_us') }}">About Us</a></li>
     </ul>
   </div>
 </nav>
@@ -71,8 +71,8 @@
 
     <form action="{{ url_for('upload') }}" method=post class=upload enctype="multipart/form-data">
       <dl>
-        <label style="background-color:grey;width:40%;margin:auto;border:none" class="btn btn-block btn-primary">
-          Browse&hellip; <input type="file" class="form-control-file" name="file"
+        <label class="btn">
+          <input type="file" class="form-control-file" name="file"
           type="file" accept=".pdf" aria-describedby="fileHelp">
       </label><br><br>
       <label class="custom-control custom-checkbox">
@@ -101,7 +101,7 @@
       <span>Designed by: Khuyen Cao, Quyen Hoang, Anqi Lu</span>
       <div class="footer-copyright py-3 text-center">
           © 2018 Copyright:
-          <a href="https://github.com/SeeYouMonday"> Github </a>
+          <a href="https://github.com/SeeYouMonday"><b> Github </b></a>
       </div>
     </div>
 </footer>
