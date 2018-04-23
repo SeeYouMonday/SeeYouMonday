@@ -8,7 +8,7 @@ import argparse
 import json
 
 
-def parse(keyword, city, state):
+def monster_crawl(keyword, city, state):
     print("Fetching {} at {},{}".format(keyword, city, state))
 
     # convert place id
@@ -20,7 +20,7 @@ def parse(keyword, city, state):
     params = {
         'q': keyword,
         'where': place_id,
-        'page': 10
+        'page': 10  # 10 * 25 = 250 (postings)
     }
     response = requests.get(job_litsting_url, params=params)
 
@@ -65,8 +65,8 @@ def parse(keyword, city, state):
         jobs = {
             "Name": job_name,
             "Company": company,
-            "State": state,
             "City": city,
+            "State": state,
             "Url": job_url
         }
         job_listings.append(jobs)
@@ -90,12 +90,12 @@ if __name__ == "__main__":
     # keyword = "software-engineer"
     # city = "Boston"
     # state = "MA"
-    scraped_data = parse(keyword, city, state)
+    scraped_data = monster_crawl(keyword, city, state)
     # print(scraped_data)
 
     print("Writing data to output file")
     with open('monster-{}-{}-{}-job-results.csv'.format(keyword, city, state), 'wb')as csvfile:
-        fieldnames = ['Name', 'Company', 'State', 'City', 'Url']
+        fieldnames = ['Name', 'Company', 'City', 'State', 'Url']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames, quoting=csv.QUOTE_ALL)
         writer.writeheader()
         if scraped_data:

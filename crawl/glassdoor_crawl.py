@@ -8,7 +8,7 @@ import argparse
 import json
 
 
-def parse(keyword, place):
+def glassdoor_crawl(keyword, city):
     headers = {'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
                'accept-encoding': 'gzip, deflate, sdch, br',
                'accept-language': 'en-GB,en-US;q=0.8,en;q=0.6',
@@ -29,7 +29,7 @@ def parse(keyword, place):
         'Cache-Control': 'no-cache',
         'Connection': 'keep-alive'
     }
-    data = {"term": place,
+    data = {"term": city,
             "maxLocationsToReturn": 10}
 
     location_url = "https://www.glassdoor.co.in/findPopularLocationAjax.htm?"
@@ -87,9 +87,8 @@ def parse(keyword, place):
                 jobs = {
                     "Name": job_name,
                     "Company": company,
-                    "State": state,
                     "City": city,
-                    "Salary": salary,
+                    "State": state,
                     "Url": job_url
                 }
                 job_listings.append(jobs)
@@ -108,20 +107,20 @@ if __name__ == "__main__":
 
     argparser = argparse.ArgumentParser()
     argparser.add_argument('keyword', help='job name', type=str)
-    argparser.add_argument('place', help='job location', type=str)
+    argparser.add_argument('city', help='job location', type=str)
     args = argparser.parse_args()
     keyword = args.keyword
-    place = args.place
+    city = args.city
     print("Fetching job details")
-    scraped_data = parse(keyword, place)
+    scraped_data = glassdoor_crawl(keyword, city)
     print("Writing data to output file")
 
-    with open('glassdoor-%s-%s-job-results.csv' % (keyword, place), 'wb')as csvfile:
-        fieldnames = ['Name', 'Company', 'State', 'City', 'Salary', 'Url']
+    with open('glassdoor-%s-%s-job-results.csv' % (keyword, city), 'wb')as csvfile:
+        fieldnames = ['Name', 'Company', 'City', 'State', 'Url']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames, quoting=csv.QUOTE_ALL)
         writer.writeheader()
         if scraped_data:
             for data in scraped_data:
                 writer.writerow(data)
         else:
-            print("Your search for %s, in %s does not match any jobs" % (keyword, place))
+            print("Your search for %s, in %s does not match any jobs" % (keyword, city))

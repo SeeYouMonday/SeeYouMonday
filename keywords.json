@@ -1,14 +1,21 @@
 {
     "dictionary": [
-      "scalable", "big", "data", "sql", "mongodb", "python","cloud", "mining","database","aws","gcp","global","ai","artificial","intelligent","machine", "learning", "ml",
-    "object","oriented","system","design","object-oriented","algorithm","software","debug","architecture", "java","python","c++","application","algorithms","stack","app","vision","learn","algorithm",
-    "es6","es5","eslint","javascript","typescript","ajax","react","reactjs", "socket", "angular","angularjs","http","web","website","websites","node","js","html","css","bootstrap","nodejs","interface",
-    "ios","android","objective-c","native","swift","mobile","accessible","phone","app",
-    "arduino","matlab","raspberry","c","c++","pspice","autodesk","circuit","circuitlab","signal","hardware","drone","device","sensor","processor","chip",
-    "cyber","security","defense","operating","kernel","thread","process","flag","cft","threat",
-    "cryptocurrency","bitcoin","blockchain","trading","quant","ether","coin","asset","assets",
-    "sql", "nosql", "hbase", "cassandra",
-    "excel", "tableau", "d3", "sas", "spss", "d3.js", "spotfire", "stata",
-    "hadoop", "mapreduce", "map", "reduce", "spark", "pig", "hive", "shark", "oozie", "zookeeper", "flume", "mahout",
-    "bachelor", "bs", "master", "ms", "mba", "phd"]
+        "java", "c", "c++", "python", "javascript", "js", "es6", "es5", "ecmascript", "typecript", "c#", "sql", "php", "swift", "ojective-c", "ruby", "rails",
+        "html", "css", "bootstrap", "react", "angular", "ajax", "json", "d3", "node", "nodejs", "express", "apache", "http", "api", "socket", "angularjs", "web", "website",
+        "computer", "vision", "machine", "learn", "artificial", "intelligence", "cv", "ml", "ai", "nlp", "natural", "language", "processing", "data", "mining", "big",
+        "mobile", "android", "ios", "native", "app", "application", "firebase",
+        "visualization", "hci", "ui", "ux", "interface", "infogram", "plotly", "rstudio",
+        "pandas", "sklearn", "scikit-learn", "tableau", "ipython", "R", "jupyter", "anaconda", "conda",
+        "object", "oriented", "scrum", "agile", "git", "github", "version", "control", "algorithms", "debug", "gdb", "design", "software",
+        "linux", "macos", "mac", "windows",
+        "cloud", "distributed", "system", "aws", "compiler", "os", "operating",
+        "scalable", "big", "data",
+        "arduino","matlab","raspberry", "pspice","autodesk","circuit","circuitlab","signal","hardware","drone","device","sensor","processor","chip", "automation",
+        "cyber","security","defense","kernel","thread","process","flag","cft","threat",
+        "cryptocurrency","bitcoin","blockchain","trading","quant","ether","coin","asset","assets",
+        "nosql", "hbase", "cassandra", "mongodb", "postgres", "db2", "database", "oracle", "excel",
+        "sas", "spss", "d3.js", "spotfire", "stata",
+        "hadoop", "mapreduce", "map", "reduce", "spark", "pig", "hive", "shark", "oozie", "zookeeper", "flume", "mahout",
+        "bachelor", "bs", "master", "ms", "mba", "phd"
+    ]
 }
