@@ -1,16 +1,14 @@
 {
     "dictionary": [
-      "scalable", "big", "data", "sql", "mongodb", "python","cloud", "mining", "database","aws","gcp","global","expand","ai","intelligent","learn","intelligence",
-    "object","oriented","system","design","scalable","database","systems", "object-oriented","algorithm","software","debugging","debug","architecture", "java","python","c++","application","algorithms","stack","app","vision","learn","algorithm",
+      "scalable", "big", "data", "sql", "mongodb", "python","cloud", "mining","database","aws","gcp","global","ai","artificial","intelligent","machine", "learning", "ml",
+    "object","oriented","system","design","object-oriented","algorithm","software","debug","architecture", "java","python","c++","application","algorithms","stack","app","vision","learn","algorithm",
     "es6","es5","eslint","javascript","typescript","ajax","react","reactjs", "socket", "angular","angularjs","http","web","website","websites","node","js","html","css","bootstrap","nodejs","interface",
     "ios","android","objective-c","native","swift","mobile","accessible","phone","app",
-    "arduino","matlab","raspberry","c","c++","pspice","autodesk","cad","solidworks", "circuit","circuitlab","signal","hardware","drone","device","sensor","processor","chip",
+    "arduino","matlab","raspberry","c","c++","pspice","autodesk","circuit","circuitlab","signal","hardware","drone","device","sensor","processor","chip",
     "cyber","security","defense","operating","kernel","thread","process","flag","cft","threat",
     "cryptocurrency","bitcoin","blockchain","trading","quant","ether","coin","asset","assets",
     "sql", "nosql", "hbase", "cassandra",
     "excel", "tableau", "d3", "sas", "spss", "d3.js", "spotfire", "stata",
     "hadoop", "mapreduce", "map", "reduce", "spark", "pig", "hive", "shark", "oozie", "zookeeper", "flume", "mahout",
-    "english", "spanish", "chinese", "mandarin", "hindi", "arabic", "portuguese", "bengali", "russian", "japanese",
-    "korean", "french", "german",
     "bachelor", "bs", "master", "ms", "mba", "phd"]
-  }
+}
