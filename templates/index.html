@@ -44,8 +44,11 @@
     a:hover {
         color: #5BC6A9;
     }
-
+    .form-control-file {
+        margin-left: 110px;
+    }
   </style>
+
 </head>
 <body>
 
@@ -71,10 +74,14 @@
 
     <form action="{{ url_for('upload') }}" method=post class=upload enctype="multipart/form-data">
       <dl>
-        <label class="btn">
+        <label class="btn" name="input_btn" style = "font-size: 16px;">
           <input type="file" class="form-control-file" name="file"
           type="file" accept=".pdf" aria-describedby="fileHelp">
-      </label><br><br>
+      </label>
+
+          <br><br>
+
+
       <label class="custom-control custom-checkbox">
           <input type="checkbox" class="custom-control-input">
           <span class="custom-control-indicator"></span>

@@ -52,7 +52,7 @@ def upload():
             user_keywords = parse_resume(path)
             
             app.logger.info(user_keywords)
-            return render_template('about_us.html')
+            return render_template('layout.html')
     else:
         return render_template('index.html')
 
