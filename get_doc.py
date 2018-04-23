@@ -9,6 +9,7 @@ import numpy as np
 import json
 import re
 from tqdm import tqdm
+import time
 
 
 def tokenize(text):
@@ -61,10 +62,11 @@ def get_doc():
     # calculate similarity scores
     print("Calculating similarities")
     scores = []
-    for job in tqdm(flatten_job_list):
+    for job in tqdm(range(len(flatten_job_list))):
+        time.sleep(15) # per robot.txt request
         try:
             # parse
-            page = urllib.request.urlopen(job["Url"])
+            page = urllib.request.urlopen(flatten_job_list[job]["Url"])
             soup = BeautifulSoup.BeautifulSoup(page, "html5lib")
 
             # prepare doc text
@@ -78,11 +80,11 @@ def get_doc():
             jaccard_score = intersect_score / union_score
 
             # save the score
-            job["Score"] = jaccard_score
+            flatten_job_list[job]["Score"] = jaccard_score
             scores.append(jaccard_score)
         except:
             # print("Something went wrong, make score = -1 and skip this url")
-            job["Score"] = -1
+            flatten_job_list[job]["Score"] = -1
             scores.append(-1)
 
     # rank by similarity scores
