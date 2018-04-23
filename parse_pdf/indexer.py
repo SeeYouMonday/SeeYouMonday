@@ -1,5 +1,6 @@
 import re
 import json 
+import PorterStemmer
 
 with open('keywords.json', 'r') as f: 
   dictionary = json.load(f)
@@ -9,6 +10,13 @@ def tokenize(text):
   clean_string = re.sub('[^a-z0-9- ]', ' ', text.lower())
   tokens = clean_string.split()
   return tokens
+
+def stemming(self, tokens):
+  stemmed_tokens = []
+  # PUT YOUR CODE HERE
+  stemmer = PorterStemmer.PorterStemmer()
+  stemmed_tokens = [stemmer.stem(t, 0, len(t) - 1) for t in tokens]
+  return stemmed_tokens
 
 def index(tokens):
   mp = {}
