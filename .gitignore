@@ -105,4 +105,4 @@ resume/
 .idea/
 
 # ignore all sample pdfs
-.pdf
+static/files/*.pdf
