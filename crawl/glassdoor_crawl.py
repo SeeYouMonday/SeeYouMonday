@@ -90,7 +90,6 @@ def parse(keyword, place):
                     "State": state,
                     "City": city,
                     "Salary": salary,
-                    "Location": job_location,
                     "Url": job_url
                 }
                 job_listings.append(jobs)
@@ -118,8 +117,7 @@ if __name__ == "__main__":
     print("Writing data to output file")
 
     with open('glassdoor-%s-%s-job-results.csv' % (keyword, place), 'wb')as csvfile:
-        fieldnames = ['Name', 'Company', 'State',
-                      'City', 'Salary', 'Location', 'Url']
+        fieldnames = ['Name', 'Company', 'State', 'City', 'Salary', 'Url']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames, quoting=csv.QUOTE_ALL)
         writer.writeheader()
         if scraped_data:
