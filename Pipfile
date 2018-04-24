@@ -16,6 +16,8 @@ requests = "*"
 tqdm = "*"
 urllib3 = "*"
 unicodecsv = "*"
+pandas = "*"
+
 
 [dev-packages]
 
