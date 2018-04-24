@@ -1,4 +1,25 @@
-"Name","Company","City","State","Url","Terms"
-"Staff Software Engineer - Embedded C++","Altran","Burlington","MA","https://job-openings.monster.com/Staff-Software-Engineer-Embedded-C-Burlington-MA-US-Altran/11/186490239","{'travel', 'team', 'c', 'comput', 'develop', 'oper', 'design', 'test', 'excel', 'scienc', 'softwar'}"
-"Software Engineer","Math Works","Dorchester","MA","https://job-openings.monster.com/Software-Engineer-Dorchester-MA-US-Math-Works/11/195132504","{'team', 'mobil', 'io', 'test', 'cloud', 'web', 'devic', 'android', 'applic', 'system', 'ui', 'autom', 'ms', 'softwar', 'matlab', 'data', 'qualiti', 'comput', 'interfac', 'bs', 'design', 'signal', 'visual', 'process', 'develop', 'scienc'}"
-"Computer Architectures Software Developer","Booz Allen Hamilton","Lexington","MA","https://job-openings.monster.com/Computer-Architectures-Software-Developer-Lexington-MA-US-Booz-Allen-Hamilton/22/93ab0cb1-4f6f-43a6-9295-34635515058d","{'c', 'hardwar', 'comput', 'debug', 'applic', 'develop', 'languag', 'secur', 'system', 'oper', 'design', 'analysi', 'test', 'softwar'}"
+"Name","Company","City","State","Url","Terms"
+
+"Staff Software Engineer - Embedded C++","Altran","Burlington","MA","https://job-openings.monster.com/Staff-Software-Engineer-Embedded-C-Burlington-MA-US-Altran/11/186490239","{'travel', 'team', 'c', 'comput', 'develop', 'oper', 'design', 'test', 'excel', 'scienc', 'softwar'}"
+
+"Software Engineer","Math Works","Dorchester","MA","https://job-openings.monster.com/Software-Engineer-Dorchester-MA-US-Math-Works/11/195132504","{'team', 'mobil', 'io', 'test', 'cloud', 'web', 'devic', 'android', 'applic', 'system', 'ui', 'autom', 'ms', 'softwar', 'matlab', 'data', 'qualiti', 'comput', 'interfac', 'bs', 'design', 'signal', 'visual', 'process', 'develop', 'scienc'}"
+
+"Computer Architectures Software Developer","Booz Allen Hamilton","Lexington","MA","https://job-openings.monster.com/Computer-Architectures-Software-Developer-Lexington-MA-US-Booz-Allen-Hamilton/22/93ab0cb1-4f6f-43a6-9295-34635515058d","{'c', 'hardwar', 'comput', 'debug', 'applic', 'develop', 'languag', 'secur', 'system', 'oper', 'design', 'analysi', 'test', 'softwar'}"
+
+inancial Systems Analyst III","PAREXEL International","Billerica","MA","https://job-openings.monster.com/Financial-Systems-Analyst-III-Billerica-MA-US-PAREXEL-International/22/0c106090-0cef-497f-9020-da95223ad274","{'system', 'software', 'process', 'assets', 'development', 'oracle', 'design'}"
+
+"Advisory Cyber Privacy Senior Associate","PWC","Boston","MA","https://job-openings.monster.com/Advisory-Cyber-Privacy-Senior-Associate-Boston-MA-US-PWC/22/4f847d76-ef5a-4787-ae71-15b2a219342f","{'assurance', 'ms', 'development', 'excel', 'map', 'bachelor', 'c', 'design', 'quality', 'security', 'http', 'language', 'cloud', 'cyber', 'data', 'team', 'testing'}"
+
+"Senior Lab Systems Analyst","PeopleServe Inc","Andover","MA","https://job-openings.monster.com/Senior-Lab-Systems-Analyst-Andover-MA-US-PeopleServe-Inc/11/195282333","{'assurance', 'system', 'software', 'assets', 'ms', 'analysis', 'design', 'bs', 'quality', 'science', 'control'}"
+
+"Lead Java Software Engineer","Randstad Technologies","Boston","MA","https://job-openings.monster.com/Lead-Java-Software-Engineer-Boston-MA-US-Randstad-Technologies/11/195328085","{'scrum', 'api', 'java', 'application', 'rest', 'analysis', 'agile', 'oracle', 'development', 'database', 'software', 'design'}"
+
+"Ruby on Rails Software Engineer","Daley and Associates","Boston","MA","https://job-openings.monster.com/Ruby-on-Rails-Software-Engineer-Boston-MA-US-Daley-Associates/11/194650162","{'java', 'cloud', 'team', 'aws', 'version', 'react', 'python', 'computer', 'angular', 'ruby', 'rails', 'software', 'master', 'scrum', 'api', 'node', 'restful', 'testing', 'web', 'analysis', 'agile', 'design', 'science', 'linux', 'qa', 'customer', 'javascript', 'sql', 'application', 'development', 'learning', 'control'}"
+
+"Software Development Infrastructure Engineer","Teradyne","Bedford","MA","https://job-openings.monster.com/Software-Development-Infrastructure-Engineer-Bedford-MA-US-Teradyne/11/194881012","{'java', 'bs', 'windows', 'testing', 'application', 'system', 'operating', 'analysis', 'defense', 'development', 'software', 'ms', 'control', 'c'}"
+
+"Data Scientist,","SNI Technology","Boston","MA","https://job-openings.monster.com/Data-Scientist-Boston-MA-US-SNI-Technology/11/195157799","{'data', 'python', 'science', 'travel', 'hadoop', 'customer', 'learning', 'machine', 'big'}"
+
+"Data Scientist","Hollister Staffing","Boston","MA","https://job-openings.monster.com/Data-Scientist-Boston-MA-US-Hollister-Staffing/11/195379971","{'data', 'python', 'science', 'c++', 'java', 'master', 'learning', 'visualization', 'analysis', 'computer', 'phd', 'database', 'sas'}"
+
+"Senior Data Scientist (Python, R, AdTech)","CyberCoders","Boston","MA","https://job-openings.monster.com/Senior-Data-Scientist-Python-R-AdTech-Boston-MA-US-CyberCoders/11/195032507","{'python', 'bs', 'team', 'artificial', 'visualization', 'computer', 'data', 'linux', 'mining', 'learning', 'tableau', 'analysis', 'machine', 'intelligence', 'science', 'apache', 'customer', 'sql', 'excel', 'spark', 'algorithms'}"
