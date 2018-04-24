@@ -39,7 +39,8 @@ def return_index(file_path='parse/outputtext.txt'):
     f.close()
   
   tokenized = tokenize(text)
-  indexed = index(tokenized)
+  # indexed = index(tokenized)
+  tokenized
   return indexed 
 
 if __name__ == "__main__":

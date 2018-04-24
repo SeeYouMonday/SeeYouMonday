@@ -1,0 +1,60 @@
+ 
+
+EXPERIENCE 
+
+DANIEL SONG 
+
+112 Willow St, Acton, MA. · 978-319-1368 
+
+dansong01@gmail.com · http://users.wpi.edu/~dlsong/ 
+
+ https://github.com/1nkling  
+
+[AUGUST 2017] – [PRESENT]  
+SOFTWARE ENGINEER, MIT LINCOLN LABORATORIES 
+Implemented/Optimized image processing algorithms (NUC, CFAR) on Jetson TX1/TX2 boards in 
+CUDA/C++ for an autonomous closed-loop CubeSat optical sensor system. 
+ 
+[JUNE 2017] – [AUGUST 2017]  
+APPLICATIONS ENGINEERING INTERN, SILICON LABS 
+Created sample applications in C to demonstrate the functionality of proprietary radio boards using 
+Zigbee/Thread protocols to potential customers.  Currently in use by Ring, Lutron and more. 
+
+EDUCATION 
+
+[AUGUST 2014 - PRESENT] 
+B.S. ELECTRICAL AND COMPUTER ENGINEERING (ECE),  
+MINOR IN COMPUTER SCIENCE (CS) 
+Worcester Polytechnic Institute (WPI), Worcester, MA. GPA 3.77, graduating on May 2018  
+CS Coursework: Introduction to Program Design, Object-Oriented Design Concepts, Systems 
+Programming Concepts, Machine Org. & Assembly, Algorithms 
+TBC Spring 2018: Database Systems I&II, Artificial Intelligence, Computer Networks 
+ECE Coursework: Digital Circuit Design, Digital System Design with FPGAs, Embedded Computing in 
+Engineering Design, Real Time Embedded Systems, Continuous/Discrete Time Analysis 
+
+SKILLS 
+
+  Programming Languages: Racket, Java, C, C++, 
+
+  Computer Skills: Android Studios, Eclipse, 
+
+CUDA, CSS, HTML, XML  
+
+  Communication Protocols: Zigbee, Thread 
+
+GitHub, Git Bash, cmd, Terminal, PuTTY, 
+Sublime Text, EMACS, MultiSim, MATLAB, 
+Verilog 
+
+PROJECTS 
+
+JANE, HACK@WPI, JANUARY 2017 
+Created an interactive Facebook bot using Python that could get weather info, provide images of 
+specific objects, translate between several languages, and much more. 
+SUSTAIN, WPI IQ PROJECT, FALL 2016 
+Created an Android application that uses responses to dynamically generated questions to 
+determine an individual’s level of environmental sustainability and recommend improvements. 
+
+ 
+
+
