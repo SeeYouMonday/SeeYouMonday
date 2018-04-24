@@ -5,11 +5,13 @@ import numpy as np
 
 K_TOP_RESULTS = 20
 
+
 def parse_terms(s):
     s = s[s.find("{")+1:s.find("}")]
     strlist = s.split(', ')
     strlist = [str[1:-1] for str in strlist]
     return strlist
+
 
 def new_dataframe(df):
     for i, x in enumerate(df['Terms']):

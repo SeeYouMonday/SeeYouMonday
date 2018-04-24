@@ -1,10 +1,10 @@
-from flask import Flask, render_template, request, flash, redirect, url_for, session
-import os, sys
+from flask import Flask, render_template, request, flash, redirect, url_for
+import os
 from os.path import abspath, dirname
 import pandas as pd
 from werkzeug.utils import secure_filename
 from parse_pdf.parse import parse_resume
-from match import match
+from data.match import match
 from flask import send_from_directory
 UPLOAD_FOLDER = 'static/files/'
 ALLOWED_EXTENSIONS = set(['pdf'])
