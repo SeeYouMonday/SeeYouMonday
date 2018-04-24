@@ -3,6 +3,7 @@ import os, sys
 from os.path import abspath, dirname
 from werkzeug.utils import secure_filename
 from parse_pdf.parse import parse_resume
+from flask import send_from_directory
 UPLOAD_FOLDER = 'static/files/'
 ALLOWED_EXTENSIONS = set(['pdf'])
 
@@ -17,6 +18,12 @@ def home():
     if request.method == "POST":
         return redirect(url_for('upload'))
     return render_template('index.html')
+
+
+@app.route('/favicon.ico')
+def favicon():
+    return send_from_directory(os.path.join(app.root_path, 'static'),
+                               'favicon.ico', mimetype='image/vnd.microsoft.icon')
 
 @app.route('/about_us/', methods =['POST', 'GET'])
 def about_us():
@@ -62,7 +69,7 @@ def upload():
 
 
 if __name__ == '__main__':
-  port = 9999
+  port = int(os.environ.get('PORT', 9999))
   app.debug = True
   print('Running on port ' + str(port))
   app.run('0.0.0.0',port)
