@@ -11,17 +11,13 @@ flask = "*"
 lxml = "*"
 numpy = "*"
 nltk = "*"
-pandas = "*"
 "pdfminer.six" = "*"
 requests = "*"
 tqdm = "*"
 urllib3 = "*"
 unicodecsv = "*"
-<<<<<<< HEAD
 pandas = "*"
 matplotlib = "*"
-=======
->>>>>>> fb800c2785f8d363a3ba5c85f910ee6b54d15bf3
 
 
 [dev-packages]

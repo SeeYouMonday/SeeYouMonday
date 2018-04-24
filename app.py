@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, flash, redirect, url_for
 import os
+import numpy as np
 from os.path import abspath, dirname
 import pandas as pd
 from werkzeug.utils import secure_filename
@@ -65,10 +66,17 @@ def upload():
             user_keywords = parse_resume(path)
 
             df = pd.read_csv('data/out.csv')
-            results = match(user_keywords, df)
+            # turn off the truncating display option 
+            pd.set_option('display.max_colwidth', -1)
+            # calculate match  
+            results = match(user_keywords, df) 
+            # reset index starting from 1
+            results.index = np.arange(1, len(results)+1)
+            # add link 
+            results['Url'] = results['Url'].apply(lambda x: '<a href="{0}">link</a>'.format(x))
 
-            print(results)
-            return render_template('result.html', tables=[results.to_html()], titles=['Name','Company','City','State','Url','Terms'])
+            return render_template('result.html', tables=[results.to_html(escape=False)], \
+                titles=['Name','Company','City','State','Url','Terms'])
     else:
         return render_template('index.html')
 

@@ -45,9 +45,15 @@
         text-align: center;
     }
 
+    h2 {
+      display: none;
+    }
+
     table {
     border-collapse: collapse;
-    width: 100%;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
     }
 
     th, td {
@@ -55,12 +61,34 @@
     padding: 8px;
     }
 
-    tr:nth-child(even){background-color: #f2f2f2}
 
-    th {
-    background-color: #4CAF50;
-    color: white;
+    td:nth-child(2) {
+      min-width: 10px;
+      max-width: 100px;
     }
+
+
+    td:nth-child(3) {
+      min-width: 10px;
+      max-width: 120px;
+    }
+
+    td:nth-child(4) {
+      min-width: 50px;
+      max-width: 60px;
+    }
+
+    td:nth-child(6) {
+      min-width: 50px;
+      max-width: 80px;
+    }
+
+    td:nth-child(7) {
+      min-width: 100px;
+      max-width: 160px;
+    }
+
+    tr:nth-child(even){background-color: #f2f2f2}
 
     table.dataframe, .dataframe th, .dataframe td {
       border: none;
@@ -71,7 +99,7 @@
       margin-bottom: 40px;
       font-size: 0.9em;
     }
-    
+
   </style>
 </head>
 <body>
