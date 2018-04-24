@@ -22,7 +22,6 @@ def home():
         return redirect(url_for('upload'))
     return render_template('index.html')
 
-
 @app.route('/favicon.ico')
 def favicon():
     return send_from_directory(os.path.join(app.root_path, 'static'),
@@ -69,7 +68,7 @@ def upload():
             results = match(user_keywords, df)
 
             print(results)
-            return render_template('result.html', tables=[results.to_html()], title=['Name','Company','City','State','Url','Terms'])
+            return render_template('result.html', tables=[results.to_html()], titles=['Name','Company','City','State','Url','Terms'])
     else:
         return render_template('index.html')
 

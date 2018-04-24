@@ -62,6 +62,16 @@
     color: white;
     }
 
+    table.dataframe, .dataframe th, .dataframe td {
+      border: none;
+      border-bottom: 1px solid #C8C8C8;
+      border-collapse: collapse;
+      text-align:left;
+      padding: 10px;
+      margin-bottom: 40px;
+      font-size: 0.9em;
+    }
+    
   </style>
 </head>
 <body>
@@ -83,7 +93,10 @@
 </div>
 
 <div class=table>
-    {{ table|safe }}
+    {% for table in tables %}
+      <h2>{{titles[loop.index]}}</h2>
+      {{ table|safe }}
+    {% endfor %}
 </div>
 
 <footer class="footer">
