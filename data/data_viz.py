@@ -5,6 +5,7 @@ import itertools
 from data.match import parse_terms
 from collections import Counter
 import numpy as np
+import os
 
 
 def get_terms(file):
@@ -30,7 +31,9 @@ def data_viz(file, title, picname):
 
     figure = plt.gcf()  # get current figure
     figure.set_size_inches(10, 8)
-    plt.savefig('{}.png'.format(picname), dpi=100)
+
+    plt.savefig(os.path.join(os.pardir, 'static', 'viz', '{}.png'.format(picname)), dpi=100)
+    # plt.savefig(os.path.join('../static/viz/{}.png'.format(picname)), dpi=100)
 
     plt.show()
 
