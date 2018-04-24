@@ -126,8 +126,7 @@ def get_doc_and_export(infile, outfilename):
         except:
             # print("Something went wrong, make terms empty")
             job["Terms"] = set()
-
-    pprint(job_list)
+    # pprint(job_list)
 
     # export into csv
     print("Export to csv")
@@ -137,6 +136,7 @@ def get_doc_and_export(infile, outfilename):
         writer.writeheader()
         for data in job_list:
             writer.writerow(data)
+    print("Done")
 
 
 if __name__ == "__main__":
