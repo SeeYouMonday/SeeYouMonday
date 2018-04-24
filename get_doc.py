@@ -16,7 +16,7 @@ from pprint import pprint
 
 
 def tokenize(text):
-    clean_string = re.sub('[^a-z0-9- ]', ' ', text.lower())
+    clean_string = re.sub('[^a-z0-9-+# ]', ' ', text.lower())
     tokens = clean_string.split()
     return tokens
 

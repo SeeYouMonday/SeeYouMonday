@@ -1,237 +1,495 @@
  
-<<<<<<< HEAD
+	
+  
 
-EXPERIENCE 
+	
+  
 
-DANIEL SONG 
+linkedin.com/in/khuyen-­‐cao-­‐630906126	
+  	
+  	
+  	
+  	
+  	
+  	
+  |	
+  	
+  	
+  	
+  	
+  	
+  	
+  github.com/hakhuyen1997	
+  
 
-112 Willow St, Acton, MA. · 978-319-1368 
+2	
+  ORMOND	
+  ST.	
+  WORCESTER,	
+  MA	
+  01609	
+  
+	
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+  HAKHUYEN1997@GMAIL.COM	
+  	
+  |	
+  (781)	
+  333-­‐9491	
+  
 
-dansong01@gmail.com · http://users.wpi.edu/~dlsong/ 
+CAREER	
+  OBJECTIVES_____________________________________________________________________________________	
+  
+I	
+  am	
+  a	
+  motivated	
+  Computer	
+  Science	
+  undergraduate	
+  seeking	
+  for	
+  entry-­‐level	
+  internship	
+  that	
+  will	
+  give	
+  me	
+  
+hands-­‐on	
+  experience	
+  and	
+  enhance	
+  my	
+  technical	
+  skills	
+  and	
+  abilities	
+  in	
+  the	
+  field	
+  of	
+  Computer	
+  Science.	
+  
+EDUCATION________________________________________________________________________________________________	
+  
 
- https://github.com/1nkling  
+	
+  
 
-[AUGUST 2017] – [PRESENT]  
-SOFTWARE ENGINEER, MIT LINCOLN LABORATORIES 
-Implemented/Optimized image processing algorithms (NUC, CFAR) on Jetson TX1/TX2 boards in 
-CUDA/C++ for an autonomous closed-loop CubeSat optical sensor system. 
- 
-[JUNE 2017] – [AUGUST 2017]  
-APPLICATIONS ENGINEERING INTERN, SILICON LABS 
-Created sample applications in C to demonstrate the functionality of proprietary radio boards using 
-Zigbee/Thread protocols to potential customers.  Currently in use by Ring, Lutron and more. 
+Worcester	
+  Polytechnic	
+  Institute	
+  	
+   	
+  
 
-EDUCATION 
+GPA:	
+  3.75	
+  
+Bachelor	
+  of	
+  Science	
+  -­‐	
+  Computer	
+  Science	
+  (2015	
+  –	
+  Present)	
+  
 
-[AUGUST 2014 - PRESENT] 
-B.S. ELECTRICAL AND COMPUTER ENGINEERING (ECE),  
-MINOR IN COMPUTER SCIENCE (CS) 
-Worcester Polytechnic Institute (WPI), Worcester, MA. GPA 3.77, graduating on May 2018  
-CS Coursework: Introduction to Program Design, Object-Oriented Design Concepts, Systems 
-Programming Concepts, Machine Org. & Assembly, Algorithms 
-TBC Spring 2018: Database Systems I&II, Artificial Intelligence, Computer Networks 
-ECE Coursework: Digital Circuit Design, Digital System Design with FPGAs, Embedded Computing in 
-Engineering Design, Real Time Embedded Systems, Continuous/Discrete Time Analysis 
+	
+  
 
-SKILLS 
+	
+  
 
-  Programming Languages: Racket, Java, C, C++, 
+	
+  
 
-  Computer Skills: Android Studios, Eclipse, 
+	
+  
 
-CUDA, CSS, HTML, XML  
+	
+  
 
-  Communication Protocols: Zigbee, Thread 
+	
+  
 
-GitHub, Git Bash, cmd, Terminal, PuTTY, 
-Sublime Text, EMACS, MultiSim, MATLAB, 
-Verilog 
+	
+  
 
-PROJECTS 
+	
+  
+	
+  
 
-JANE, HACK@WPI, JANUARY 2017 
-Created an interactive Facebook bot using Python that could get weather info, provide images of 
-specific objects, translate between several languages, and much more. 
-SUSTAIN, WPI IQ PROJECT, FALL 2016 
-Created an Android application that uses responses to dynamically generated questions to 
-determine an individual’s level of environmental sustainability and recommend improvements. 
+	
+  
+	
+  
 
- 
-=======
-	  
+	
+  
+	
+  
 
-	  
+	
+  
+	
+  
 
-linkedin.com/in/khuyen-­‐cao-­‐630906126	  	  	  	  	  	  	  |	  	  	  	  	  	  	  github.com/hakhuyen1997	  
+	
+  
+	
+  
 
-2	  ORMOND	  ST.	  WORCESTER,	  MA	  01609	  
-	  	  	  	  	  	  	  	  	  	  HAKHUYEN1997@GMAIL.COM	  	  |	  (781)	  333-­‐9491	  
+	
+  
+	
+  
 
-CAREER	  OBJECTIVES_____________________________________________________________________________________	  
-I	  am	  a	  motivated	  Computer	  Science	  undergraduate	  seeking	  for	  entry-­‐level	  internship	  that	  will	  give	  me	  
-hands-­‐on	  experience	  and	  enhance	  my	  technical	  skills	  and	  abilities	  in	  the	  field	  of	  Computer	  Science.	  
-EDUCATION________________________________________________________________________________________________	  
+RELATED	
+  COURSES:	
+  	
+  	
+  	
+  	
+  	
+  
 
-	  
+ALGORITHMS	
+  
+SYSTEM	
+  PROGRAMING	
+  CONCEPT	
+  
+SOFTWARE	
+  ENGINEERING	
+  
 
-Worcester	  Polytechnic	  Institute	  	   	  
-
-GPA:	  3.75	  
-Bachelor	  of	  Science	  -­‐	  Computer	  Science	  (2015	  –	  Present)	  
-
-	  
-
-	  
-
-	  
-
-	  
-
-	  
-
-	  
-
-	  
-
-	  
-	  
-
-	  
-	  
-
-	  
-	  
-
-	  
-	  
-
-	  
-	  
-
-	  
-	  
-
-RELATED	  COURSES:	  	  	  	  	  	  
-
-ALGORITHMS	  
-SYSTEM	  PROGRAMING	  CONCEPT	  
-SOFTWARE	  ENGINEERING	  
-
--­‐	  	  	  	  	  OBJECT	  ORIENTED	  DESIGN	  CONCEPT	  
+-­‐	
+  	
+  	
+  	
+  	
+  OBJECT	
+  ORIENTED	
+  DESIGN	
+  CONCEPT	
+  
 - 
 - 
 - 
--  DATABASE	  SYSTEM	  I	  
+-  DATABASE	
+  SYSTEM	
+  I	
+  
 - 
 
-FOUNDATION	  OF	  COMPUTER	  SCIENCE 
+FOUNDATION	
+  OF	
+  COMPUTER	
+  SCIENCE 
 
-	  
-	  SPRING	  2015	  
-	  	  	  FALL	  2015	  –	  FALL	  2016	  
+	
+  
+	
+  SPRING	
+  2015	
+  
+	
+  	
+  	
+  FALL	
+  2015	
+  –	
+  FALL	
+  2016	
+  
 
-CHARLES	  O.	  THOMPSON	  SCHOLAR	  
-WPI	  DEAN’S	  LIST	  	  	  
+CHARLES	
+  O.	
+  THOMPSON	
+  SCHOLAR	
+  
+WPI	
+  DEAN’S	
+  LIST	
+  	
+  	
+  
 
-	  ACADEMIC	  ACHIEVEMENTS	  ___________________________________________________________________________	  
-	  
-	  SKILLS_____________________________________________________________________________________________________	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  PROJECT_________________________________________________________________________________________________	  
-	  VOLUNTEER	  EXPERIENCE/ORGANIZATIONS________________________________________________________	  
+	
+  ACADEMIC	
+  ACHIEVEMENTS	
+  ___________________________________________________________________________	
+  
+	
+  
+	
+  SKILLS_____________________________________________________________________________________________________	
+  
+	
+  
+	
+  
+	
+  
+	
+  
+	
+  
+	
+  
+	
+  PROJECT_________________________________________________________________________________________________	
+  
+	
+  VOLUNTEER	
+  EXPERIENCE/ORGANIZATIONS________________________________________________________	
+  
 
-Racket,	  JAVA,	  C,	  C++,	  Python,	  HTML	  
-Windows,	  Mac	  OSx,	  Linux	  
-Adobe	  Photoshop,	  Autodesk	  Maya,	  GIMP	  2.0,	  Adobe	  After	  Effects	  
-Microsoft	  Office	  (Word,	  Excel,	  PowerPoint),	  Maplesoft,	  R	  Project,	  Matlab	  
-Eclipse,	  IntelliJ	  
-SQL	  
+Racket,	
+  JAVA,	
+  C,	
+  C++,	
+  Python,	
+  HTML	
+  
+Windows,	
+  Mac	
+  OSx,	
+  Linux	
+  
+Adobe	
+  Photoshop,	
+  Autodesk	
+  Maya,	
+  GIMP	
+  2.0,	
+  Adobe	
+  After	
+  Effects	
+  
+Microsoft	
+  Office	
+  (Word,	
+  Excel,	
+  PowerPoint),	
+  Maplesoft,	
+  R	
+  Project,	
+  Matlab	
+  
+Eclipse,	
+  IntelliJ	
+  
+SQL	
+  
 
-PROGRAMMING	  LANGUAGE:	  
-	  
-OPERATING	  SYSTEMS:	  
-	  
-DIGITAL	  DESIGN	  PROGRAMS:	  
-	  
-APPLICATIONS:	  
-	  
-INTEGRATED	  DEVELOPMENT	  ENVIRONMENT	  (IDEs):	  
-	  
-DATABASE:	  
-	  
+PROGRAMMING	
+  LANGUAGE:	
+  
+	
+  
+OPERATING	
+  SYSTEMS:	
+  
+	
+  
+DIGITAL	
+  DESIGN	
+  PROGRAMS:	
+  
+	
+  
+APPLICATIONS:	
+  
+	
+  
+INTEGRATED	
+  DEVELOPMENT	
+  ENVIRONMENT	
+  (IDEs):	
+  
+	
+  
+DATABASE:	
+  
+	
+  
 
-JAVA	  Gaming	  application	  (Letter	  Craze)	  –	  Front-­‐end	  developer,	  Software	  quality	  assurance	  	  
-IQP	  Project:	  Stock	  market	  simulation	  –	  Group	  leader,	  penny	  stock	  trading	  analyst	  
+JAVA	
+  Gaming	
+  application	
+  (Letter	
+  Craze)	
+  –	
+  Front-­‐end	
+  developer,	
+  Software	
+  quality	
+  assurance	
+  	
+  
+IQP	
+  Project:	
+  Stock	
+  market	
+  simulation	
+  –	
+  Group	
+  leader,	
+  penny	
+  stock	
+  trading	
+  analyst	
+  
 
-	  
-	  
-	  
+	
+  
+	
+  
+	
+  
 
-	  
+	
+  
 
-	  
+	
+  
 
-	  
+	
+  
 
-	  
+	
+  
 
-	  
+	
+  
 
--­‐KHUYEN	  CAO-­‐	  
+-­‐KHUYEN	
+  CAO-­‐	
+  
 
-	  
-	  
-	  
-	  
+	
+  
+	
+  
+	
+  
+	
+  
 
-WOMEN	  IN	  COMPUTER	  SCIENCE	  	   	  
-	  
-VIETNAMESE	  STUDENT	  ASSOCIATION	  	  
-	  
-SASE	  (Society	  of	  Asian	  Scientists	  and	  Engineers)	  	  	  
-MODEL	  U.N	  	   	  
-	  
+WOMEN	
+  IN	
+  COMPUTER	
+  SCIENCE	
+  	
+   	
+  
+	
+  
+VIETNAMESE	
+  STUDENT	
+  ASSOCIATION	
+  	
+  
+	
+  
+SASE	
+  (Society	
+  of	
+  Asian	
+  Scientists	
+  and	
+  Engineers)	
+  	
+  	
+  
+MODEL	
+  U.N	
+  	
+   	
+  
+	
+  
 
-	  
-	  
+	
+  
+	
+  
 
-	  
+	
+  
 
-	  
+	
+  
 
-	  
+	
+  
 
-	  
+	
+  
 
-	  
-	  
-	  
-	  
+	
+  
+	
+  
+	
+  
+	
+  
 
-	  
-	  
-	  
-	  
+	
+  
+	
+  
+	
+  
+	
+  
 
-	  
-	  
-	  
-	  
+	
+  
+	
+  
+	
+  
+	
+  
 
-	  
-	  
-	  
-	  
+	
+  
+	
+  
+	
+  
+	
+  
 
-2015-­‐	  PRESENT	  
-2015-­‐	  PRESENT	  
-2015-­‐	  PRESENT	  
-2013-­‐	  PRESENT	  
->>>>>>> 8c9fff1352031ae68fee1820a5cb35a363833a5a
+2015-­‐	
+  PRESENT	
+  
+2015-­‐	
+  PRESENT	
+  
+2015-­‐	
+  PRESENT	
+  
+2013-­‐	
+  PRESENT	
+  
 
 
