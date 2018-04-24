@@ -9,4 +9,4 @@ result = pd.concat(frames)
 result.drop_duplicates()
 result.drop(result.columns[0], axis=1)
 
-result.to_csv('out.csv')
+result.to_csv('out.csv', encoding='utf-8')
