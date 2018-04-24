@@ -1,8 +1,10 @@
 from flask import Flask, render_template, request, flash, redirect, url_for, session
 import os, sys
 from os.path import abspath, dirname
+import pandas as pd
 from werkzeug.utils import secure_filename
 from parse_pdf.parse import parse_resume
+from match import match
 from flask import send_from_directory
 UPLOAD_FOLDER = 'static/files/'
 ALLOWED_EXTENSIONS = set(['pdf'])
@@ -61,8 +63,11 @@ def upload():
             file.save(path)
 
             user_keywords = parse_resume(path)
-            
-            app.logger.info(user_keywords)
+
+            df = pd.read_csv('data/toy.csv')
+            results = match(user_keywords, df)
+
+            print(results)
             return render_template('layout.html')
     else:
         return render_template('index.html')
