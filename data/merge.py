@@ -1,4 +1,5 @@
 import pandas as pd
+import csv
 
 df1 = pd.read_csv('data-scientist.csv')
 df2 = pd.read_csv('software-engineer.csv')
@@ -9,4 +10,5 @@ result = pd.concat(frames)
 result.drop_duplicates()
 result.drop(result.columns[0], axis=1)
 
-result.to_csv('out.csv', encoding='utf-8')
+result.to_csv('out.csv',index=False, quoting=csv.QUOTE_ALL)
+
