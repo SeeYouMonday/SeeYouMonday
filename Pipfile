@@ -17,6 +17,7 @@ tqdm = "*"
 urllib3 = "*"
 unicodecsv = "*"
 pandas = "*"
+matplotlib = "*"
 
 
 [dev-packages]
