@@ -9,7 +9,7 @@ from data.match import match
 from flask import send_from_directory
 
 UPLOAD_FOLDER = 'static/files/'
-JOB_DOC_FILE = 'data/toy.csv'
+JOB_DOC_FILE = 'data/out.csv'
 ALLOWED_EXTENSIONS = set(['pdf'])
 
 app = Flask(__name__)
