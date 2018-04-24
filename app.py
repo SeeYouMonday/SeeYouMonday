@@ -22,6 +22,10 @@ def home():
 def about_us():
     return render_template('about_us.html')
 
+@app.route('/visualization/', methods =['POST', 'GET'])
+def visualization():
+    return render_template('visualization.html')
+
 def allowed_file(filename):
     return '.' in filename and \
            filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
