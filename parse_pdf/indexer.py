@@ -40,8 +40,8 @@ def return_index(file_path='parse/outputtext.txt'):
   
   tokenized = tokenize(text)
   # indexed = index(tokenized)
-  tokenized
-  return indexed 
+
+  return tokenized 
 
 if __name__ == "__main__":
   file_path = 'parse/outputtext.txt'
