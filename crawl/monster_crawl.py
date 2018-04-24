@@ -9,6 +9,15 @@ import json
 
 
 def monster_crawl(keyword, city, state):
+    headers = {'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+               'accept-encoding': 'gzip, deflate, sdch, br',
+               'accept-language': 'en-GB,en-US;q=0.8,en;q=0.6',
+               'upgrade-insecure-requests': '1',
+               'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/51.0.2704.79 Chrome/51.0.2704.79 Safari/537.36',
+               'Cache-Control': 'no-cache',
+               'Connection': 'keep-alive'
+               }
+
     print("Fetching {} at {},{}".format(keyword, city, state))
 
     # convert place id
@@ -20,9 +29,9 @@ def monster_crawl(keyword, city, state):
     params = {
         'q': keyword,
         'where': place_id,
-        'page': 10  # 10 * 25 = 250 (postings)
+        'page': 8  # 8 * 25 = 200 (postings)
     }
-    response = requests.get(job_litsting_url, params=params)
+    response = requests.get(job_litsting_url, headers=headers, params=params)
 
     # Extract data
     parser = html.fromstring(response.text)
@@ -94,7 +103,7 @@ if __name__ == "__main__":
     # print(scraped_data)
 
     print("Writing data to output file")
-    with open('monster-{}-{}-{}-job-results.csv'.format(keyword, city, state), 'wb')as csvfile:
+    with open('url-{}.csv'.format(keyword), 'wb')as csvfile:
         fieldnames = ['Name', 'Company', 'City', 'State', 'Url']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames, quoting=csv.QUOTE_ALL)
         writer.writeheader()
