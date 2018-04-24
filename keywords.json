@@ -1,8 +1,8 @@
 [
     "computer", "science", "development", "travel", "team", "troubleshoot", "analysis",
     "java", "c", "c++", "python", "javascript", "js", "es6", "es5", "ecmascript", "typecript", "c#", "sql", "php", "swift", "ojective-c", "ruby", "rails",
-    "html", "css", "bootstrap", "react", "angular", "ajax", "json", "d3", "node", "nodejs", "express", "apache", "http", "api", "socket", "angularjs", "web", "website", "rest", "restful", ".net",
-    "computer", "vision", "machine", "learn", "artificial", "intelligence", "cv", "ml", "ai", "nlp", "natural", "language", "processing", "data", "mining", "big",
+    "html", "css", "bootstrap", "react", "angular", "ajax", "json", "d3", "node", "nodejs", "express", "apache", "http", "api", "socket", "angularjs", "web", "website", "websites", "rest", "restful", ".net",
+    "computer", "vision", "machine", "learning", "artificial", "intelligence", "cv", "ml", "ai", "nlp", "natural", "language", "processing", "data", "mining", "big",
     "mobile", "android", "ios", "native", "app", "application", "firebase",
     "visualization", "hci", "ui", "ux", "interface", "infogram", "plotly", "rstudio", "gui",
     "pandas", "sklearn", "scikit-learn", "tableau", "ipython", "R", "jupyter", "anaconda", "conda",
@@ -14,8 +14,8 @@
     "cyber","security","defense","kernel","thread","process","flag","cft","threat",
     "cryptocurrency","bitcoin","blockchain","trading","quant","ether","coin","asset","assets",
     "nosql", "hbase", "cassandra", "mongodb", "postgres", "db2", "database", "oracle", "excel",
-    "sas", "spss", "d3.js", "spotfire", "stata",
-    "hadoop", "mapreduce", "map", "reduce", "spark", "pig", "hive", "shark", "oozie", "zookeeper", "flume", "mahout",
-    "sqa", "qa", "quality", "assurance", "soap", "selenium", "testing", "",
-    "bachelor", "bs", "master", "ms", "mba", "phd"
+    "sas", "spss", "spotfire", "stata",
+    "hadoop", "mapreduce", "map", "reduce", "spark", "pig", "hive", "kafka", "shark", "oozie", "zookeeper", "flume", "mahout",
+    "sqa", "qa", "quality", "assurance", "soap", "selenium", "testing", "test",
+    "bachelor", "bs", "master", "ms", "mba", "phd", "customer", "graph"
 ]
