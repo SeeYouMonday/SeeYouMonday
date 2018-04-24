@@ -106,3 +106,5 @@ resume/
 
 # ignore all sample pdfs
 static/files/*.pdf
+
+parse_pdf/*.txt

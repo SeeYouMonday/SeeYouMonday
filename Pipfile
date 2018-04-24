@@ -7,11 +7,15 @@ name = "pypi"
 
 [packages]
 beautifulsoup4 = "*"
-numpy = "*"
-urllib3 = "*"
 flask = "*"
+lxml = "*"
+numpy = "*"
+nltk = "*"
 "pdfminer.six" = "*"
 requests = "*"
+tqdm = "*"
+urllib3 = "*"
+unicodecsv = "*"
 
 [dev-packages]
 
