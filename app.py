@@ -74,6 +74,7 @@ def upload():
             results.index = np.arange(1, len(results)+1)
             # add link 
             results['Url'] = results['Url'].apply(lambda x: '<a href="{0}">link</a>'.format(x))
+            results['Terms'] = results['Terms'].apply(lambda x: x[1:-1]) 
 
             return render_template('result.html', tables=[results.to_html(escape=False)], \
                 titles=['Name','Company','City','State','Url','Terms'])

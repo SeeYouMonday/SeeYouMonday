@@ -1,24 +1,59 @@
 {% extends "layout.html" %}
 {% block title %}Home{% endblock %}
 {% block heading %}See You Monday{% endblock %}
+{% block head %}
+  {{ super() }}
+  <style>
+    #tooltip {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black;
+    }
+
+    #tooltip .tooltiptext {
+        top: -5px;
+        left: 105%; 
+        visibility: hidden;
+        width: 120px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+    }
+    .tooltiptext {
+      font-size: 11px;
+    }
+
+    #tooltip:hover .tooltiptext {
+        visibility: visible;
+    }
+</style>
+{% endblock %} 
 
 {% block content %}
 <div class="col-lg-12">
     <h3>Upload Your Resume:</h3>
-
     <form action="{{ url_for('upload') }}" method=post class=upload enctype="multipart/form-data">
       <dl>
         <label class="btn" name="input_btn" style = "font-size: 16px;">
           <input type="file" class="form-control-file" name="file"
           type="file" accept=".pdf" aria-describedby="fileHelp">
       </label>
-          <br><br>
+      <br><br>
+      <p id="tooltip">What happens next?
+          <span class="tooltiptext">We will examine your resume, and find you 20 that best job positions that match your resume!</span>
+      </p>
+      <br><br>
       <button type="button-lg" class="btn btn-primary" 
         style="width: 150px; height:50px; background-color:#43967F;border:none; font-size:18px;">
         Submit
       </button>
       </dl>
     </form>
-
 </div>
 {% endblock %}
