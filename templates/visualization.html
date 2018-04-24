@@ -24,10 +24,11 @@
     img{
       width: 10%;
       height: 10%;
+        margin-right: 20px;
     }
     /* unvisited link */
     a:link {
-        color: #43967F;
+        color: #61afa0;
     }
 
     /* visited link */
@@ -56,14 +57,16 @@
     <ul class="nav navbar-nav">
       <li><a href="{{ url_for('home') }}">Home</a></li>
       <li><a href="{{ url_for('about_us') }}">About Us</a></li>
-        <li><a href="{{ url_for('visualization') }}">Visualization</a></li>
+      <li class="active"><a href="{{ url_for('visualization') }}">Visualization</a></li>
     </ul>
   </div>
 </nav>
 
 <div class="jumbotron text-center" style="background-color:black;">
-  <h1 style="color: white; font-size: 100px;"><img src="https://cdn3.iconfinder.com/data/icons/business-office-2/512/zoom_in-512.png" alt="logo">Results</h1>
+  <h1 style="color: white; font-size: 100px"><img src="http://icons.iconarchive.com/icons/webalys/kameleon.pics/512/Graph-Magnifier-icon.png" alt="logo">Visualization</h1>
 </div>
+
+
 
 <footer class="footer">
     <div class="container text-center" style="padding-top: 10px;">
