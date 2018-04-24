@@ -12,6 +12,7 @@ import time
 from dict_reader import csv_to_dictList
 import csv
 import argparse
+from pprint import pprint
 
 
 def tokenize(text):
@@ -105,8 +106,9 @@ def get_doc_and_export(infile, outfilename):
       keywords = set(stemming(json.load(f)))
       f.close()
 
-    # calculate similarity scores
+    # parse urls
     print("Processing job descriptions")
+    results = []
     for job in tqdm(job_list):
         time.sleep(15) # per robot.txt request
         try:
@@ -125,9 +127,11 @@ def get_doc_and_export(infile, outfilename):
             # print("Something went wrong, make terms empty")
             job["Terms"] = set()
 
+    pprint(job_list)
+
     # export into csv
     print("Export to csv")
-    with open('data/{}.csv'.format(outfilename), 'wb')as csvfile:
+    with open('data/{}.csv'.format(outfilename), 'w')as csvfile:
         fieldnames = ['Name', 'Company', 'City', 'State', 'Url', 'Terms']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames, quoting=csv.QUOTE_ALL)
         writer.writeheader()
