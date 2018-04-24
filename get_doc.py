@@ -16,15 +16,15 @@ from pprint import pprint
 
 
 def tokenize(text):
-  clean_string = re.sub('[^a-z0-9- ]', ' ', text.lower())
-  tokens = clean_string.split()
-  return tokens
+    clean_string = re.sub('[^a-z0-9- ]', ' ', text.lower())
+    tokens = clean_string.split()
+    return tokens
 
 
 def stemming(tokens):
-  stemmer = PorterStemmer.PorterStemmer()
-  stemmed_tokens = [stemmer.stem(t, 0, len(t) - 1) for t in tokens]
-  return stemmed_tokens
+    stemmer = PorterStemmer.PorterStemmer()
+    stemmed_tokens = [stemmer.stem(t, 0, len(t) - 1) for t in tokens]
+    return stemmed_tokens
 
 
 def get_doc():
@@ -48,8 +48,8 @@ def get_doc():
 
     # get keywords
     with open('keywords.json', 'r') as f:
-      keywords = set(stemming(json.load(f)))
-      f.close()
+        keywords = set(stemming(json.load(f)))
+        f.close()
 
     # prepare sample resume
     sample_resume = [
@@ -64,7 +64,7 @@ def get_doc():
     print("Calculating similarities")
     scores = []
     for job in tqdm(range(len(flatten_job_list))):
-        time.sleep(15) # per robot.txt request
+        time.sleep(15)  # per robot.txt request
         try:
             # parse
             page = urllib.request.urlopen(flatten_job_list[job]["Url"])
@@ -103,12 +103,11 @@ def get_doc_and_export(infile, outfilename):
 
     # get keywords
     with open('keywords.json', 'r') as f:
-      keywords = set(stemming(json.load(f)))
-      f.close()
+        keywords = set(json.load(f))
+        f.close()
 
     # parse urls
     print("Processing job descriptions")
-    results = []
     for job in tqdm(job_list):
         time.sleep(10)  # sleep to avoid hitting the server too quickly
         try:
@@ -117,14 +116,16 @@ def get_doc_and_export(infile, outfilename):
             soup = BeautifulSoup.BeautifulSoup(page, "html5lib")
 
             # prepare doc text
-            text = soup.find(id="JobDesscription").get_text()
-            doc_stemmed_tokens = set(stemming(tokenize(text)))
-            doc_terms = keywords & doc_stemmed_tokens
+            text = soup.find(id="JobDescription").get_text()
+            doc_tokens = set(tokenize(text))
+            doc_terms = keywords & doc_tokens
 
             # save the terms
+            print('\n', doc_terms)
             job["Terms"] = doc_terms
         except:
             # print("Something went wrong, make terms empty")
+            print("\nERROR!! :(")
             job["Terms"] = set()
     # pprint(job_list)
 
@@ -140,7 +141,6 @@ def get_doc_and_export(infile, outfilename):
 
 
 if __name__ == "__main__":
-
     ''' eg-:python get_doc.py "crawl/toy.csv" "toy" '''
 
     argparser = argparse.ArgumentParser()
@@ -150,4 +150,3 @@ if __name__ == "__main__":
     i = args.infile
     o = args.outfilename
     get_doc_and_export(i, o)
-
