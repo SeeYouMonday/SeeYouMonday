@@ -46,7 +46,6 @@ def match(user_tokens, df):
     # rank by similarity scores
     sorted_args = np.argsort(scores)[::-1]
 
-
     results = [job_list.loc[i] for i in sorted_args[:K_TOP_RESULTS]]
     return results
 

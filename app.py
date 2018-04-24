@@ -6,6 +6,7 @@ from werkzeug.utils import secure_filename
 from parse_pdf.parse import parse_resume
 from match import match
 from flask import send_from_directory
+
 UPLOAD_FOLDER = 'static/files/'
 ALLOWED_EXTENSIONS = set(['pdf'])
 
@@ -64,11 +65,11 @@ def upload():
 
             user_keywords = parse_resume(path)
 
-            df = pd.read_csv('data/toy.csv')
+            df = pd.read_csv('data/out.csv')
             results = match(user_keywords, df)
 
             print(results)
-            return render_template('layout.html')
+            return render_template('result.html', tables=[results.to_html()], title=['Name','Company','City','State','Url','Terms'])
     else:
         return render_template('index.html')
 
