@@ -1,102 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>See You Monday</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="https://s3.amazonaws.com/tinycards/image/2143f20d1ed27731024b8bef310e3c35" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
-    .navbar{
-    margin-bottom: 0px;
-    }
-    .footer {
-      border-top-style: outset;
-      position: absolute;
-      right: 0;
-      left: 0;
-      bottom: 0;
-      padding-bottom: 10px;
-      background-color: grey;
-      text-align: center;
-    }
-    img{
-      width: 10%;
-      height: 10%;
-    }
-    /* unvisited link */
-    a:link {
-        color: #43967F;
-    }
+{% extends "layout.html" %}
+{% block title %}About Us{% endblock %}
+{% block heading %}About Us{% endblock %}
 
-    /* visited link */
-    a:visited {
-        color: #277E66;
-    }
-
-    /* mouse over link */
-    a:hover {
-        color: #5BC6A9;
-    }
-
-    h3,p {
-        text-align: center;
-    }
-
-  </style>
-</head>
-<body>
-
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="{{ url_for('home') }}">See U Monday</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li><a href="{{ url_for('home') }}">Home</a></li>
-      <li class="active"><a href="{{ url_for('about_us') }}">About Us</a></li>
-        <li><a href="{{ url_for('visualization') }}">Visualization</a></li>
-
-    </ul>
-  </div>
-</nav>
-
-<div class="jumbotron text-center" style="background-color:black;">
-  <h1 style="color: white; font-size: 100px;"><img src="https://cdn3.iconfinder.com/data/icons/business-office-2/512/zoom_in-512.png" alt="logo">About Us</h1>
-</div>
-
-<div class="container">
-  <div class="row">
-    <div class="col-sm-4">
-      <h3>What is See U Monday?</h3>
-      <p>See U Monday (SUM) is a personalized job searching tool where the results are tailored to individual users based on their resume. Using SUM, the user can upload a resume in pdf format. The data available from that input resume will be parsed through the text to identify user’s skill set, and match the skill set with our documents that we have already built by crawling current top job searching tools such as Glassdoor and Indeed.</p>
-        <p><b>For more information, please click: <a href="https://github.com/SeeYouMonday/SeeYouMonday/blob/master/README.md">Read Me</a></b></p>
-    </div>
-    <div class="col-sm-4">
-      <h3>Data Acquisition</h3>
-      <p>We crawl the top 3 job sites: Indeed, Monster and Glassdoor. We create a list of potential job titles and iterative through the list by changing query parameters on the urls to crawl. Each job posting is a document and we store the job title, company name, location, and job description.</p>
-        <p><b>For more information, please click: <a href="https://github.com/SeeYouMonday/SeeYouMonday/tree/master/crawl">Data Files</a></b></p>
-
-    </div>
-    <div class="col-sm-4">
-      <h3>Evaluation</h3>
-      <p>We conducted a user study to evaluate our final product.</p>
-        <p><b>To better help us improve, please fill out this <a href="https://goo.gl/forms/tO5fqWhJezJv8N0t2">Survey</a></b></p>
-    </div>
-  </div>
-</div>
-
-<footer class="footer">
-    <div class="container text-center" style="padding-top: 10px;">
-      <span>Designed by: Khuyen Cao, Quyen Hoang, Anqi Lu</span>
-      <div class="footer-copyright py-3 text-center">
-          © 2018 Copyright:
-          <a href="https://github.com/SeeYouMonday"><b> Github </b></a>
+{% block content %}
+  <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <h3>What is See U Monday?</h3>
+          <p>See U Monday (SUM) is a personalized job searching tool where the results are tailored to individual users based on their resume. Using SUM, the user can upload a resume in pdf format. The data available from that input resume will be parsed through the text to identify user’s skill set, and match the skill set with our documents that we have already built by crawling current top job searching tools such as Glassdoor and Indeed.</p>
+            <p><b>For more information, please click: <a href="https://github.com/SeeYouMonday/SeeYouMonday/blob/master/README.md">Read Me</a></b></p>
+        </div>
+        <div class="col-sm-4">
+          <h3>Data Acquisition</h3>
+          <p>We crawl the top 3 job sites: Indeed, Monster and Glassdoor. We create a list of potential job titles and iterative through the list by changing query parameters on the urls to crawl. Each job posting is a document and we store the job title, company name, location, and job description.</p>
+            <p><b>For more information, please click: <a href="https://github.com/SeeYouMonday/SeeYouMonday/tree/master/crawl">Data Files</a></b></p>
+    
+        </div>
+        <div class="col-sm-4">
+          <h3>Evaluation</h3>
+          <p>We conducted a user study to evaluate our final product.</p>
+            <p><b>To better help us improve, please fill out this <a href="https://goo.gl/forms/tO5fqWhJezJv8N0t2">Survey</a></b></p>
+        </div>
       </div>
     </div>
-</footer>
+{% endblock %}
 
-</body>
-</html>
+

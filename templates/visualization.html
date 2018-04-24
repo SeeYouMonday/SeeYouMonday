@@ -1,73 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>See You Monday</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="https://s3.amazonaws.com/tinycards/image/2143f20d1ed27731024b8bef310e3c35" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
-    .navbar{
-    margin-bottom: 0px;
-    }
-    .footer {
-      border-top-style: outset;
-      {#position: fixed;#}
-      right: 0;
-      left: 0;
-      bottom: 0;
-      padding-bottom: 10px;
-      background-color: grey;
-      text-align: center;
-    }
-
-    img{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    /* unvisited link */
-    a:link {
-        color: #61afa0;
-    }
-
-    /* visited link */
-    a:visited {
-        color: #277E66;
-    }
-
-    /* mouse over link */
-    a:hover {
-        color: #5BC6A9;
-    }
-
-    h3,p {
-        text-align: center;
-    }
-
+{% extends "layout.html" %}
+{% block title %}Visualization{% endblock %}
+{% block heading %}Visualization{% endblock %}
+<!-- {% block head %}
+  {{ super() }}
+  <style type="text/css">
+    .important { 
+      img { 
+        width: 100%; height: 100%;}
+        }
   </style>
-</head>
-<body>
+{% endblock %} -->
 
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="{{ url_for('home') }}">See U Monday</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li><a href="{{ url_for('home') }}">Home</a></li>
-      <li><a href="{{ url_for('about_us') }}">About Us</a></li>
-      <li class="active"><a href="{{ url_for('visualization') }}">Visualization</a></li>
-    </ul>
-  </div>
-</nav>
-
-<div class="jumbotron text-center" style="background-color:black;">
-  <h1 style="color: white; font-size: 100px"><img style = "width: 10%;height: 10%;margin-right: 20px; display: inline;" src="http://icons.iconarchive.com/icons/webalys/kameleon.pics/512/Graph-Magnifier-icon.png" alt="logo">Visualization</h1>
-</div>
-
+{% block content %}
 <img src="/static/viz/out.png" width="50%" height="auto">
 <img src="/static/viz/software-engineer.png" width="50%" height="auto">
 <img src="/static/viz/data-scientist.png" width="50%" height="auto">
@@ -76,17 +20,4 @@
 {#<a href="https://ibb.co/jTcXTc"><img src="https://preview.ibb.co/m8w3ZH/software_engineer.png" alt="software_engineer" border="0"></a>#}
 {#<a href="https://ibb.co/iRCMMx"><img src="https://preview.ibb.co/kVfmoc/data_scientist.png" alt="data_scientist" border="0"></a>#}
 {#<a href="https://ibb.co/fzoQEH"><img src="https://preview.ibb.co/hnqu8c/computer_systems.png" alt="computer_systems" border="0"></a>#}
-
-
-<footer class="footer">
-    <div class="container text-center" style="padding-top: 10px;">
-      <span>Designed by: Khuyen Cao, Quyen Hoang, Anqi Lu</span>
-      <div class="footer-copyright py-3 text-center">
-          © 2018 Copyright:
-          <a href="https://github.com/SeeYouMonday"><b> Github </b></a>
-      </div>
-    </div>
-</footer>
-
-</body>
-</html>
+{% endblock %}

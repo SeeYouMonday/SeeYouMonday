@@ -9,6 +9,7 @@ from data.match import match
 from flask import send_from_directory
 
 UPLOAD_FOLDER = 'static/files/'
+JOB_DOC_FILE = 'data/toy.csv'
 ALLOWED_EXTENSIONS = set(['pdf'])
 
 app = Flask(__name__)
@@ -59,13 +60,12 @@ def upload():
         if file and allowed_file(file.filename):
             basedir = abspath(dirname(__file__))
             filepath = secure_filename(file.filename)
-            app.logger.info('got filename and stuff')
             path = os.path.join(basedir, app.config['UPLOAD_FOLDER'], filepath)
             file.save(path)
 
             user_keywords = parse_resume(path)
 
-            df = pd.read_csv('data/out.csv')
+            df = pd.read_csv(JOB_DOC_FILE)
             # turn off the truncating display option 
             pd.set_option('display.max_colwidth', -1)
             # calculate match  
