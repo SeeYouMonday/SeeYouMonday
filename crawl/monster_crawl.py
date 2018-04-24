@@ -29,7 +29,7 @@ def monster_crawl(keyword, city, state):
     params = {
         'q': keyword,
         'where': place_id,
-        'page': 1  # 10 * 25 = 250 (postings)
+        'page': 8  # 8 * 25 = 200 (postings)
     }
     response = requests.get(job_litsting_url, headers=headers, params=params)
 
@@ -103,7 +103,7 @@ if __name__ == "__main__":
     # print(scraped_data)
 
     print("Writing data to output file")
-    with open('monster-{}-{}-{}-job-results.csv'.format(keyword, city, state), 'wb')as csvfile:
+    with open('url-{}.csv'.format(keyword), 'wb')as csvfile:
         fieldnames = ['Name', 'Company', 'City', 'State', 'Url']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames, quoting=csv.QUOTE_ALL)
         writer.writeheader()
