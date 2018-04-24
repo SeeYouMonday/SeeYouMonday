@@ -1,5 +1,4 @@
 from crawl.monster_crawl import monster_crawl
-from crawl.glassdoor_crawl import glassdoor_crawl
 import parse_pdf.PorterStemmer as PorterStemmer
 import itertools
 import bs4 as BeautifulSoup
@@ -10,6 +9,9 @@ import json
 import re
 from tqdm import tqdm
 import time
+from dict_reader import csv_to_dictList
+import csv
+import argparse
 
 
 def tokenize(text):
@@ -19,8 +21,6 @@ def tokenize(text):
 
 
 def stemming(tokens):
-  stemmed_tokens = []
-  # PUT YOUR CODE HERE
   stemmer = PorterStemmer.PorterStemmer()
   stemmed_tokens = [stemmer.stem(t, 0, len(t) - 1) for t in tokens]
   return stemmed_tokens
@@ -96,5 +96,54 @@ def get_doc():
         print(flatten_job_list[i])
 
 
+def get_doc_and_export(infile, outfilename):
+    # get the job listings
+    job_list = csv_to_dictList(infile)
+
+    # get keywords
+    with open('keywords.json', 'r') as f:
+      keywords = set(stemming(json.load(f)))
+      f.close()
+
+    # calculate similarity scores
+    print("Processing job descriptions")
+    for job in tqdm(job_list):
+        time.sleep(15) # per robot.txt request
+        try:
+            # parse
+            page = urllib.request.urlopen(job["Url"])
+            soup = BeautifulSoup.BeautifulSoup(page, "html5lib")
+
+            # prepare doc text
+            text = soup.find(id="JobDescription").get_text()
+            doc_stemmed_tokens = set(stemming(tokenize(text)))
+            doc_terms = keywords & doc_stemmed_tokens
+
+            # save the terms
+            job["Terms"] = doc_terms
+        except:
+            # print("Something went wrong, make terms empty")
+            job["Terms"] = set()
+
+    # export into csv
+    print("Export to csv")
+    with open('data/{}.csv'.format(outfilename), 'wb')as csvfile:
+        fieldnames = ['Name', 'Company', 'City', 'State', 'Url', 'Terms']
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames, quoting=csv.QUOTE_ALL)
+        writer.writeheader()
+        for data in job_list:
+            writer.writerow(data)
+
+
 if __name__ == "__main__":
-  get_doc()
+
+    ''' eg-:python get_doc.py "crawl/toy.csv" "toy" '''
+
+    argparser = argparse.ArgumentParser()
+    argparser.add_argument('infile', help='file location', type=str)
+    argparser.add_argument('outfilename', help='outfile name', type=str)
+    args = argparser.parse_args()
+    i = args.infile
+    o = args.outfilename
+    get_doc_and_export(i, o)
+
