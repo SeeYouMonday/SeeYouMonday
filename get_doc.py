@@ -110,14 +110,14 @@ def get_doc_and_export(infile, outfilename):
     print("Processing job descriptions")
     results = []
     for job in tqdm(job_list):
-        time.sleep(15) # per robot.txt request
+        time.sleep(10)  # sleep to avoid hitting the server too quickly
         try:
             # parse
             page = urllib.request.urlopen(job["Url"])
             soup = BeautifulSoup.BeautifulSoup(page, "html5lib")
 
             # prepare doc text
-            text = soup.find(id="JobDescription").get_text()
+            text = soup.find(id="JobDesscription").get_text()
             doc_stemmed_tokens = set(stemming(tokenize(text)))
             doc_terms = keywords & doc_stemmed_tokens
 
