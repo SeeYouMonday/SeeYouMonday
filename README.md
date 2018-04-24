@@ -8,22 +8,30 @@ Spring 2018
 
 Worcester Polytechnic Institute
 
+Link to See You Monday(SUM): [https://see-you-monday.herokuapp.com/](https://see-you-monday.herokuapp.com/)
 
 ## Authors 
 
-- Khuyen Cao
-- Quyen Hoang
+- [Khuyen Cao](https://github.com/hakhuyen1997)
+- [Quyen Hoang](https://github.com/quyendinhthuchoang)
 - [Anqi Lu](https://github.com/anqi-lu)
 
 ## Introduction & Motivation
 
-Every year, many people have the need to look for internships or part-time/full-time jobs at companies. We all have experienced the long and stressful process of searching for positions to apply to on the internet. Existing job posting search engines like Glassdoor and Indeed crawls a great volume of job postings from all over the web. Job seekers could define parameters such as position type and location to narrow the search. However, the users of these tools still have to click into every result and read through the descriptions to determine whether the posting is fit for them, which is a tiring and time-consuming process. We would like to propose a personalized job searching tool called See You Monday (SUM) where the results are tailored to individual users based on their resume. Using SUM, the user can upload a resume in pdf format. The data available from that input resume will be parsed through the text to identify user’s skill set, and match the skill set with our documents that we have already built by crawling current top job searching tools such as Glassdoor and Indeed. The return results will be kept at a small k number (10-20) for easier navigation, ranked from most to least relevant to the input resume. For this project, we limit the search parameters for only Computer Science related jobs due to the restricted time and resources. This can benefit all people in tech field who want to find a job match by saving their time and energy. In future work, we can expand this tools to match different careers and can furthermore benefit a larger range of users.
+Every year, many people have the need to look for internships or part-time/full-time jobs at companies. We all have experienced the long and stressful process of searching for positions to apply to on the internet. Existing job posting search engines like Glassdoor and Indeed crawls a great volume of job postings from all over the web. Job seekers could define parameters such as position type and location to narrow the search. However, the users of these tools still have to click into every result and read through the descriptions to determine whether the posting is fit for them, which is a tiring and time-consuming process. We would like to propose a personalized job searching tool called See You Monday (SUM) where the results are tailored to individual users based on their resume. Using SUM, the user can upload a resume in pdf format. The data available from that input resume will be parsed through the text to identify user’s skill set, and match the skill set with our documents that we have already built by crawling current top job searching tools such as Glassdoor and Indeed. The return results will be kept at a small k number (20) for easier navigation, ranked from most to least relevant to the input resume. For this project, we limit the search parameters for only Computer Science related jobs due to the restricted time and resources. This can benefit all people in tech field who want to find a job match by saving their time and energy. In future work, we can expand this tools to match different careers and can furthermore benefit a larger range of users.
 
 ## Methodology 
 
 ### Data Acquisition
 
-Scope: We limit the job field to Computer Science only, and will support both internship and full-time job search. We will crawl the top 3 job sites: Indeed, Monster and Glassdoor. We will create a list of potential job titles and iterative through the list by changing query parameters on the urls to crawl. (For example: https://www.monster.com/jobs/search?q=software-engineer) Each job posting would be a document and we will store the job title, company name, location, and job description. We will crawl around 500 job postings from each website. This number may vary depending on the websites’ crawling policy.
+We limit the job field to Computer Science only. We attempted to crawl from 3 top job sites: Indeed, Monster and Glassdoor. With Monster, we were able to get 250 results from one go; with Glassdoor, we only get 25 results at a time; with Indeed, we only got 10 results. 
+
+We created a list of potential job titles and iterative through the list by changing query parameters on the urls to crawl. 
+Even though we limited the scope to Computer Science related, there are still sub-fields of job positions. We used
+"Software Engineer", "Data Scientist", and "Computer Systems" as three keywords we used to crawl since these three fields
+seem to capture a lot of Computer Science job positions and also have little overlap. 
+
+ Each job posting contains job title, company name, location, url, and job description terms. In total, crawled around 600 job postings. 
 
 ### Tools and methods
 
@@ -37,9 +45,26 @@ Scope: We limit the job field to Computer Science only, and will support both in
 
 ## Results and evaluation
 
-We plan to finish building the web-app at least 1-2 weeks before the due date for the final project and use our own resume for first step evaluation. We will select one of our resumes and randomly select 20 documents. Since most of the documents will potentially be relevant based on our scope, we will not calculate precision and recall. We will  rank the documents on scale of 0-3 manually, so we will have a best order of documents and a ground truth Discounted Cumulative Gain(DCG) value. From there we can calculate the Normalized DCG of our system. 
+ We randomly select 12 documents from our data file as a test document collection. Since most of the documents will potentially be relevant based on our scope, we do not calculate precision and recall. We ranked the documents on scale of 0-3 manually, so we had a best order of documents and a ground truth Discounted Cumulative Gain(DCG) value. From there we can calculate the Normalized DCG of our system. 
   
-We will also pass out the link to SUM for friends and fellow students at WPI for evaluation. There can be a quick survey at the end of the website for users to give us feedbacks. The accuracy of the results can be based on the precision score of users' feedbacks on how many jobs, out of the total return results, that the users really want to apply. We expect to have around 20+ feedbacks to have an estimates of how well the tools that we built performed from a user perspective. Additional adjustment will be made if the results is not desirable.
+> SUM Ranking:
+3 1 3 1 1 3 0 2 1 0 0 0
+
+> Ground Truth Ranking: 
+3 3 3 2 1 1 1 1 0 0 0 0 
+
+> NDCG@5
+0.82 
+> NDCG@12
+0.95
+
+We will also pass out the link to SUM for friends and fellow students at WPI for evaluation. There is a quick survey at the end of the website for users to give us feedbacks. The accuracy of the results can be based on the precision score of users' feedbacks on how many jobs, out of the total return results, that the users really want to apply. We expect to have around 20+ feedbacks to have an estimates of how well the tools that we built performed from a user perspective. Additional adjustment will be made if the results is not desirable.
+
+
+## Discussion
+
+
+
 
 ## Limitations and future scopes
 
@@ -49,6 +74,7 @@ Our tool however, will be very preliminary for its use. It has the following lim
 * (b) Big websites Glassdoor and Indeed are already very powerful in crawling company websites at a certain rate (at least once a day). We don’t have the computing power and storage, so our project will only have a small subset of the documents that are not updated frequently. 
 
 In the future, we could explore abstracting one person’s experience and skill sets and match with the company and postings in a natural language processing way. This will not only help SUM give a more accurate match but also largely widen the range of our target users. 
+
 
 
 ## Instruction to run it
