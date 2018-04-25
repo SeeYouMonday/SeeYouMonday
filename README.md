@@ -1,11 +1,8 @@
 # See You Monday
 
 CS525 Informational Retrieval & Social Web Project 
-
 Professor [Kyumin Lee](http://web.cs.wpi.edu/~kmlee/)
-
 Spring 2018
-
 Worcester Polytechnic Institute
 
 Link to See You Monday(SUM): [https://see-you-monday.herokuapp.com/](https://see-you-monday.herokuapp.com/)
@@ -57,7 +54,23 @@ seem to capture a lot of Computer Science job positions and also have little ove
 
 > NDCG@12: 0.95
 
-We also advocated link to SUM for friends and fellow students at WPI for evaluation. There is a quick survey at the end of the website for users to give us feedbacks. The accuracy of the results can be based on the precision score of users' feedbacks on how many jobs, out of the total return results, that the users really want to apply. We expected to have around 20+ feedbacks to have an estimates of how well the tools that we built performed from a user perspective.
+We also advocated link to SUM for friends and fellow students at WPI for evaluation. There is a quick survey at the end of the website for users to give us feedbacks. In the survey we asked the following questions:
+* Your overall satisfaction of this page? (Rate 1 - 5)
+* How helpful do you think it was for finding your job? (Rate 1 - 5)
+* Was the website easy for you to navigate? (Rate 1 - 5)
+* The percentage of the results in which you find closely match your need? (<25%, 25-50%, 50-75%, >75%)
+* How many links in the results that you clicked? 
+* Will you use "See U Monday" as a job searching tool next time? (Yes, No, Maybe)
+* Will you recommend "See U Monday" to a friend? (Yes, No, Maybe)
+* Additional feedback (Optional)
+
+We collected around 20 feedbacks to have an estimates of how well the tools that we built performed from a user perspective.
+Findings from the user study survey:
+* 67% participants are satisfied with our website.
+* 58% participants think SUM is helpful in job searching.
+* 81% participants think SUM is easy to navigate.
+* 47.6% participants will recommend SUM to friends, and 47.6% chose "maybe". 
+
 
 
 ## Discussion
