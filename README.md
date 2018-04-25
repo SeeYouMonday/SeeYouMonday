@@ -31,7 +31,7 @@ Even though we limited the scope to Computer Science related, there are still su
 "Software Engineer", "Data Scientist", and "Computer Systems" as three keywords we used to crawl since these three fields
 seem to capture a lot of Computer Science job positions and also have little overlap. 
 
- Each job posting contains job title, company name, location, url, and job description terms. In total, crawled around 600 job postings. 
+ Each job posting contains job title, company name, location, url, and job description terms. In total, crawled around 600 job postings. It is stored in "out.csv" in "data" folder. 
 
 ### Tools and methods
 
@@ -41,11 +41,11 @@ seem to capture a lot of Computer Science job positions and also have little ove
 
 * Parsing pdf input: we plan to use an existing pdf parsing tools called [PDFMiner](https://github.com/pdfminer/pdfminer.six) . PDFMiner is free, open source and available on Github. It is compatible with both Python 2 and 3, with a focus on parsing and analyzing text data, which is suitable for the goal of our project. Additionally, PDFMiner supports multiple font types and allow us to convert the PDF input files into plain text format.
 
-* Ranking: tf-idf and cosine similarity. We will index the documents as we have done for the homeworks. But instead of using the full vocabulary, we will create a much smaller dictionary containing only tech related keywords that appear often on resumes and company websites, as technical skills are what companies are mostly looking for. We will also manually create equivalent term dictionary for technical terms that have multiple variations. For example, “NLP” and “natural language processing” would be considered the same term. 
+* Ranking: [Jaccard similarity](https://en.wikipedia.org/wiki/Jaccard_index). We indexed the documents as we have done for the homeworks. But instead of using the full vocabulary, we created a much smaller dictionary containing only tech related keywords that appear often on resumes and company websites, as technical skills are what companies are mostly looking for. We also included technical terms that have multiple variations. For example, “NLP” and “natural language processing” are both in our dictionary. The Jaccard similarity measures the overlap unique technical terms between the resume and the job positing. The resulting job postings were ranked in descending order. 
 
 ## Results and evaluation
 
- We randomly select 12 documents from our data file as a test document collection. Since most of the documents will potentially be relevant based on our scope, we do not calculate precision and recall. We ranked the documents on scale of 0-3 manually, so we had a best order of documents and a ground truth Discounted Cumulative Gain(DCG) value. From there we can calculate the Normalized DCG of our system. 
+ We randomly select 12 documents from our data file as a test document collection. Since most of the documents will potentially be relevant based on our scope, we do not calculate precision and recall. We ranked the documents on scale of 0-3 manually, so we had a best order of documents and a ground truth Discounted Cumulative Gain(DCG) value. From there we can calculate the Normalized DCG of our system. The score from NDCG seems promising. 
   
 > SUM Ranking:
 3 1 3 1 1 3 0 2 1 0 0 0
@@ -53,18 +53,18 @@ seem to capture a lot of Computer Science job positions and also have little ove
 > Ground Truth Ranking: 
 3 3 3 2 1 1 1 1 0 0 0 0 
 
-> NDCG@5
-0.82 
-> NDCG@12
-0.95
+> NDCG@5: 0.82 
 
-We will also pass out the link to SUM for friends and fellow students at WPI for evaluation. There is a quick survey at the end of the website for users to give us feedbacks. The accuracy of the results can be based on the precision score of users' feedbacks on how many jobs, out of the total return results, that the users really want to apply. We expect to have around 20+ feedbacks to have an estimates of how well the tools that we built performed from a user perspective. Additional adjustment will be made if the results is not desirable.
+> NDCG@12: 0.95
+
+We also advocated link to SUM for friends and fellow students at WPI for evaluation. There is a quick survey at the end of the website for users to give us feedbacks. The accuracy of the results can be based on the precision score of users' feedbacks on how many jobs, out of the total return results, that the users really want to apply. We expected to have around 20+ feedbacks to have an estimates of how well the tools that we built performed from a user perspective.
 
 
 ## Discussion
 
+* It is difficult to crawl websites. Most famous websites have mechanism to prevent people from crawling a lot of results from their websites too frequently. Once we crawled job postins on Monster without sleeping, our IPs were blocked by Monster. So we used VPN and add 15 seconds of sleeping to crawl between job postings. One take-away is that we should respect and follow the crawling guideline set by other websites. 
 
-
+* We had a discussion about what measures we should use to calculate the similalrity between job postings and resumes. The potential options were: cosine similarity, tf-idf, Jaccard similarity, and Pearson similarity. We decided that term frequency didn't matter that much for resumes and job postings so we decided not to use tf-idf. We wanted a measure that captures how well one's technical skills fit with job's technical requirements. Jaccard similarity seems to be the way to go as it captures the overlap between two sets divided by the union of the two sets.
 
 ## Limitations and future scopes
 
@@ -74,7 +74,6 @@ Our tool however, will be very preliminary for its use. It has the following lim
 * (b) Big websites Glassdoor and Indeed are already very powerful in crawling company websites at a certain rate (at least once a day). We don’t have the computing power and storage, so our project will only have a small subset of the documents that are not updated frequently. 
 
 In the future, we could explore abstracting one person’s experience and skill sets and match with the company and postings in a natural language processing way. This will not only help SUM give a more accurate match but also largely widen the range of our target users. 
-
 
 
 ## Instruction to run it
@@ -87,3 +86,5 @@ In the future, we could explore abstracting one person’s experience and skill 
 
 * To serve the web locally
 > `python app.py`
+
+Again, website is also hosted on heroku at [https://see-you-monday.herokuapp.com/](https://see-you-monday.herokuapp.com/)
